@@ -1,0 +1,14 @@
+{
+  "files": {
+    "orcamentoTijolo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Or\u00e7amento Constru\u00e7\u00e3o\n# (C) 2017 J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\nimport math\n\n# Coletando os dados de entrada\nprecoTijolo = float(raw_input('Digite o pre\u00e7o da unidade do tijolo (Em reais): '))\nalturaTijolo = float(raw_input('Digite a altura do tijolo (Em metros): '))\nlarguraTijolo = float(raw_input('Digite o comprimento do tijolo (Em metros): '))\nalturaParede = float(raw_input('Digite a altura das paredes (Em metros): '))\nlarguraParede = float(raw_input('Digite o comprimento das paredes (Em metros): '))\n\n# Calculando a quantidade de tijolos\ntotalTijolos = (alturaParede / alturaTijolo) * (larguraParede / larguraTijolo)\n\n# Calculando o or\u00e7amento\norcamentoTotal = math.ceil(totalTijolos) * precoTijolo\n\n# Exibindo os resultados\nprint 'O n\u00famero total de tijolos \u00e9 %.1f e o or\u00e7amento final \u00e9 de R$ %.1f' % (totalTijolos, orcamentoTotal)\n",
+      "name": "orcamentoTijolo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "976c46159796dc828cd1bff2b830b0a9",
+  "iid": 4526981706153984,
+  "activity_revision": "1.0.2"
+}
