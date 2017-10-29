@@ -1,0 +1,7 @@
+# 1
+0.9999999999999999
+# 2
+1.0
+pi =    3.14
+# 5
+"i = %d  log(i) = %.3f  log(log(i)) = %.3f" % (i, math.log(i), math.log(math.log(i)))

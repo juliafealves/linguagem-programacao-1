@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mru.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# MRU 2\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\n# Entrada dos dados.\nposicao_inicial = float(raw_input())\nvelocidade = float(raw_input())\ntempo = float(raw_input())\n\n# Calculando a posi\u00e7\u00e3o final.\nposicao_final = posicao_inicial + (velocidade * tempo)\n\n# Imprimindo os resultados\nprint \"%.2f\" % posicao_final",
+      "name": "mru.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8cd69afe568116f744fcc8052ecd7522",
+  "iid": 5828725090287616,
+  "activity_revision": "1.1.1"
+}
