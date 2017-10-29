@@ -1,0 +1,14 @@
+{
+  "files": {
+    "salario.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Sal\u00e1rio\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\nir = 0.11\ninss = 0.08\nsindicato = 0.05\n\n# Entrada dos dados.\nsalario_bruto = float(raw_input())\nhoras_trabalho = int(raw_input())\n\n# Calculando a hora bruta\nhora_bruta = salario_bruto / horas_trabalho\n\n# Calculando os descontos\ndesconto_ir = salario_bruto * ir\ndesconto_inss = salario_bruto * inss\ndesconto_sindicato = salario_bruto * sindicato\n\n# Calculando o sal\u00e1rio l\u00edquido\nsalario_liquido = salario_bruto - (desconto_ir + desconto_inss + desconto_sindicato)\n\n# Calculando a hora l\u00edquida\nhora_liquida = salario_liquido / horas_trabalho\n\n# Imprimindo as sa\u00eddas\nprint \"Sal\u00e1rio Bruto = \" + str(salario_bruto)\nprint \"Hora Bruta = \" + str(hora_bruta)\nprint \"Desconto IR = \" + str(desconto_ir)\nprint \"Desconto INSS = \" + str(desconto_inss)\nprint \"Desconto Sindicato = \" + str(desconto_sindicato)\nprint \"Sal\u00e1rio L\u00edquido = \" + str(salario_liquido)\nprint \"Hora L\u00edquida = \" + str(hora_liquida)",
+      "name": "salario.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5a58b213e040561ea5ed5730a72b4300",
+  "iid": 6374655967363072,
+  "activity_revision": "1.0.3"
+}
