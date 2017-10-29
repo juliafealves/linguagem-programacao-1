@@ -1,0 +1,14 @@
+{
+  "files": {
+    "media_final.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# M\u00e9dia Final\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\n# Entradas das m\u00e9dias\nmedia_parcial = float(raw_input())\nprova_final = float(raw_input())\n\n# Calculando a m\u00e9dia final\nmedia_final = (media_parcial * 0.6) + (prova_final * 0.4)\n\n# Imprimindo a m\u00e9dia final\nprint \"M\u00e9dia final: %.1f\" % media_final",
+      "name": "media_final.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8652f90ca263b674d9885f2582db46b1",
+  "iid": 5511990847995904,
+  "activity_revision": "1.0.1"
+}
