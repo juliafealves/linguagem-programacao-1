@@ -1,0 +1,14 @@
+{
+  "files": {
+    "construcao_condominio.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Constru\u00e7\u00e3o de Condom\u00ednio\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\n# Entrada dos dados\naltura = float(raw_input())\nbase = float(raw_input())\narea_casa = float(raw_input())\n\n# Calculando quantidade de casas.\narea_terreno = altura * base\ncasas = int(area_terreno / area_casa)\n\n# Imprimindo quantidade de casas\nprint \"%i casa(s) pode(m) ser constru\u00edda(s) no terreno.\" % casas",
+      "name": "construcao_condominio.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ed551542fddf56856afdf735d6ab8f25",
+  "iid": 5784054209183744,
+  "activity_revision": "1.1.0"
+}
