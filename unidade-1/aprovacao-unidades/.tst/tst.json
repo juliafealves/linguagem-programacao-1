@@ -1,0 +1,14 @@
+{
+  "files": {
+    "aprovacao_unidades.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aprova\u00e7\u00e3o Unidades\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\n# Entrada dos dados\nunidade = int(raw_input(\"Unidade? \"))\nmedia = float(raw_input(\"M\u00e9dia de aprova\u00e7\u00e3o na unidade? \"))\n\n# Calculando a pr\u00f3xima unidade.\nproxima_unidade = unidade + 1\n\n# Imprimindo o resultado.\nprint \"\\nO aluno vai para a unidade %i com m\u00e9dia %.1f.\" % (proxima_unidade, media)",
+      "name": "aprovacao_unidades.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "09c36d2f0b024a0e928f02c7ca09fc1b",
+  "iid": 4879795259179008,
+  "activity_revision": "1.1.0"
+}
