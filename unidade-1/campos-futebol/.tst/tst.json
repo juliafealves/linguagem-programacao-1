@@ -1,0 +1,14 @@
+{
+  "files": {
+    "campos_futebol.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Campos Futebol\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\narea_campo = 4000.0\n\n# Entrada dos dados referente as \u00e1reas\narea1 = float(raw_input())\narea2 = float(raw_input())\narea3 = float(raw_input())\n\n# Calculando as \u00e1reas de futebol.\ncampo1 = area1 / area_campo\ncampo2 = area2 / area_campo\ncampo3 = area3 / area_campo\n\n# Calculando a m\u00e9dia.\ncampo_media = (campo1 + campo2 + campo3) / 3\n\n# Imprimindo os resultados.\nprint '%.2f' % campo1\nprint '%.2f' % campo2\nprint '%.2f' % campo3\nprint '%.2f' % campo_media\n",
+      "name": "campos_futebol.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4be82dfc954007aaab24190ca3fd7b3b",
+  "iid": 6614989720780800,
+  "activity_revision": "1.0.1"
+}
