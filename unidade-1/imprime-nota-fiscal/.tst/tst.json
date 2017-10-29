@@ -1,0 +1,14 @@
+{
+  "files": {
+    "notaFiscal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Imprime Nota Fiscal\n# (C) 2017 J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\n# Entrada de dados da nota fiscal.\nvalorTotal = float(raw_input())\ndata = raw_input()\nquantidadeProdutos = int(raw_input())\n\n# Calculando a m\u00e9dia de pre\u00e7o dos produtos.\nmedia = valorTotal / quantidadeProdutos\n\nprint \"Data: %s\" % data\nprint \"O valor total da compra foi de R$ %.2f. A m\u00e9dia do pre\u00e7o dos produtos \u00e9 de %.1f.\" % (valorTotal, media)",
+      "name": "notaFiscal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "64938d24e9214506fd954a571a5f8ef8",
+  "iid": 5046135609622528,
+  "activity_revision": "1.1.1"
+}
