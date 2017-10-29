@@ -1,0 +1,14 @@
+{
+  "files": {
+    "percentagem_aprovados.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Percentagem de Aprovados\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\nprint \"An\u00e1lise da Turma\\n===\"\n\n# Entrada dos dados\nalunos_aprovados = int(raw_input(\"N\u00famero de aprovados? \"))\nalunos_reprovados = int(raw_input(\"N\u00famero de reprovados? \"))\n\n# Calculando as percentagens.\ntotal_alunos = alunos_aprovados + alunos_reprovados\npercentagem_aprovados = (100.0 * alunos_aprovados) / total_alunos\npercetagem_reprovados = (100.0 * alunos_reprovados) / total_alunos\n\n# Imprimindo os resultados.\nprint \"---\\nTotal de alunos na turma: %i\" % total_alunos\nprint \"Aprovados: %i = %.1f%%\" % (alunos_aprovados, percentagem_aprovados)\nprint \"Reprovados: %i = %.1f%%\" % (alunos_reprovados, percetagem_reprovados)\n",
+      "name": "percentagem_aprovados.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "035708b5da38f1942ddf49f0aec829a3",
+  "iid": 4574296139628544,
+  "activity_revision": "1.0.1"
+}
