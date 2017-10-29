@@ -1,0 +1,14 @@
+{
+  "files": {
+    "area_circulo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# \u00c1rea do C\u00edrculo\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\nimport math\n\n# Entrada de dado referente ao raio do circulo\nraio = float(raw_input())\n\n# Calculando a \u00e1rea\narea = math.pi * (raio ** 2)\n\n# Imprimindo o resultado da \u00e1rea.\nprint \"%.2f\" % area",
+      "name": "area_circulo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f92f3611cfaec77280aa1f83b3ce3a4c",
+  "iid": 6357729769684992,
+  "activity_revision": "1.1.0"
+}
