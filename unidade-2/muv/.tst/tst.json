@@ -1,0 +1,14 @@
+{
+  "files": {
+    "muv.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Movimento Uniformemente Variado\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\n# Entrada dos dados\nposicao_inicial = float(raw_input(\"Posi\u00e7\u00e3o inicial? \"))\nvelocidade_inicial = float(raw_input(\"Velocidade inicial? \"))\ntempo_deslocamento = float(raw_input(\"Tempo? \"))\naceleracao = float(raw_input(\"Acelera\u00e7\u00e3o? \"))\n\n# Calculando velocidade final\nvelocidade_final = velocidade_inicial + (aceleracao * tempo_deslocamento)\n\n# Calculando velocidade m\u00e9dia\nvelocidade_media = velocidade_inicial + (aceleracao * tempo_deslocamento) / 2\n\n# Calulando posi\u00e7\u00e3o final\nposicao_final = posicao_inicial + (velocidade_inicial * tempo_deslocamento) + (aceleracao * (tempo_deslocamento ** 2)) / 2\n\n# Imprimindo o valor das passagens e forma de pagamento\nprint \"\\nDados da quest\u00e3o\\n================\"\nprint \"   Posi\u00e7\u00e3o inicial: %.2f m\" % posicao_inicial\nprint \"Velocidade inicial: %.2f m/s\" % velocidade_inicial\nprint \"        Acelera\u00e7\u00e3o: %.2f m/s2\" % aceleracao\nprint \"             Tempo: %.2f s\" % tempo_deslocamento\nprint \"  Velocidade final: %.2f m/s\" % velocidade_final\nprint \"  Velocidade m\u00e9dia: %.2f m/s\" % velocidade_media\nprint \"     Posi\u00e7\u00e3o final: %.2f m\" % posicao_final\n",
+      "name": "muv.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8b4737d918f15a80e6c1212008e281f3",
+  "iid": 6704126398300160,
+  "activity_revision": "1.1.0"
+}
