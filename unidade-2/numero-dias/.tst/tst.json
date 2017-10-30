@@ -1,0 +1,14 @@
+{
+  "files": {
+    "numero_dias.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# N\u00famero de Dias\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\n# Entrada dos dados\nsegundos = int(raw_input())\n\n# Calculando os dias\ndias = segundos / (3600 * 24)\n\n# Imprimindo\nprint dias\n",
+      "name": "numero_dias.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e42bba127313f61541b5452a4e1a208c",
+  "iid": 5513304839553024,
+  "activity_revision": "1.1.0"
+}
