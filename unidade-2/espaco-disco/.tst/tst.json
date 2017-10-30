@@ -1,0 +1,14 @@
+{
+  "files": {
+    "espaco_disco.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Espa\u00e7o em Disco Simplificado\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\n# Entrada dos dados referente os espa\u00e7os.\nusuario1 = raw_input()\nespaco1 = int(raw_input())\n\nusuario2 = raw_input()\nespaco2 = int(raw_input())\n\nusuario3 = raw_input()\nespaco3 = int(raw_input())\n\n# Convertendo os dados para MB.\nespaco1 = (espaco1 / 1024.0) / 1024.0\nespaco2 = (espaco2 / 1024.0) / 1024.0\nespaco3 = (espaco3 / 1024.0) / 1024.0\n\n# Calculando o total e m\u00e9dia de espa\u00e7o.\ntotal = espaco1 + espaco2 + espaco3\nmedia = total / 3.0\n\n# Imprimindo os espa\u00e7os.\nprint \"SPLab - Espa\u00e7o utilizado pelos usu\u00e1rios\"\nprint \"---------------------------------------------\"\nprint \"Nr., Usu\u00e1rio, Espa\u00e7o Utilizado\\n\"\nprint \"1, %s, %.2f MB\" % (usuario1, espaco1)\nprint \"2, %s, %.2f MB\" % (usuario2, espaco2)\nprint \"3, %s, %.2f MB\" % (usuario3, espaco3)\nprint \"\\nEspa\u00e7o total ocupado: %.2f MB\" % total\nprint \"Espa\u00e7o m\u00e9dio ocupado: %.2f MB\" % media",
+      "name": "espaco_disco.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "89f8b4e934e2db773f4d3c3513616628",
+  "iid": 6458673312301056,
+  "activity_revision": "1.1.0"
+}
