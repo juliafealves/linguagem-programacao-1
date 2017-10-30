@@ -1,0 +1,14 @@
+{
+  "files": {
+    "iptu.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# IPTU\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\ntaxa_limpeza = 35.0\ndesconto_cota_unica = 0.75\ndesconto_parcelado6x = 0.95\n\n# Entrada dos dados\narea_casa = float(raw_input(\"\u00c1rea constru\u00edda? \"))\naliquota = float(raw_input(\"Al\u00edquota? \"))\n\n# Calculando valor do iptu\niptu = area_casa * aliquota + taxa_limpeza\niptu_avista = iptu * desconto_cota_unica\n\n# Calulando parcelamento\niptu_parcelada6x = iptu * desconto_parcelado6x\nparcela_6x = iptu_parcelada6x / 6\nparcela_10x = iptu / 10\n\n# Imprimindo o valor das passagens e forma de pagamento\nprint \"IPTU: R$ %.2f\\n\" % iptu\nprint \"Pagamento:\\n1. Quota \u00fanica. R$ %.2f\" % iptu_avista\nprint \"2. Em 6 parcelas. Total: R$ %.2f\" % iptu_parcelada6x\nprint \"   6 x R$ %.2f\" % parcela_6x\nprint \"3. Em 10 parcelas. Total: R$ %.2f\" % iptu\nprint \"   10 x R$ %.2f\" % parcela_10x",
+      "name": "iptu.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "806bf98ea526356d6fa4601a8d0bab7d",
+  "iid": 6076254792974336,
+  "activity_revision": "1.1.1"
+}
