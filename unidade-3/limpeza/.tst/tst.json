@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limpeza.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Limpeza - Unidade 3\n\nOPCAO_FOSSA = \"1\"\nOPCAO_CAIXA_DAGUA = \"2\"\nOPCAO_CAIXA_GORDURA = \"3\"\n\nlimpeza_fossa = 80\nlimpeza_caixa = 50\nlimpeza_caixa_gordura = 50\nvalor_brinde = 200\npreco = 0\n\n# Escolhendo a op\u00e7\u00e3o de servi\u00e7o.\nopcao = raw_input()\n\nif (opcao == OPCAO_FOSSA or opcao == OPCAO_CAIXA_DAGUA):\n\tvolume = float(raw_input())\n\t\n\t# Calculando o pre\u00e7o do servi\u00e7o de acordo com a op\u00e7\u00e3o.\n\tif (opcao == OPCAO_FOSSA):\n\t\tpreco = volume * limpeza_fossa\n\telse:\n\t\tpreco = volume * limpeza_caixa\t\t\nelse:\n\tpreco = limpeza_caixa_gordura\n\t\nprint \"R$ %i,00\" % int(preco)\n\nif (preco > valor_brinde):\n\tprint \"Brinde!\"\n",
+      "name": "limpeza.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 66.61,\n      \"header\": 2\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "15a5d363da5fad2ee7216fd9c9879fea",
+  "iid": 4715033627983872,
+  "activity_revision": "1.0.3"
+}
