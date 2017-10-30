@@ -1,0 +1,14 @@
+{
+  "files": {
+    "perimetro_triangulo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Per\u00edmetro de um Tri\u00e2ngulo\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\nimport math\n\n# Entrada dos dados.\nx1 = float(raw_input())\ny1 = float(raw_input())\nx2 = float(raw_input())\ny2 = float(raw_input())\nx3 = float(raw_input())\ny3 = float(raw_input())\n\n# Calculando as dist\u00e2ncias dos pontos\ndistancia1 = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)\ndistancia2 = math.sqrt((x3 - x2) ** 2 + (y3 - y2) ** 2)\ndistancia3 = math.sqrt((x3 - x1) ** 2 + (y3 - y1) ** 2)\n\n# Calculando o per\u00edmetro do tri\u00e2ngulo.\nperimetro = distancia1 + distancia2 + distancia3\n\n# Imprimindo.\nprint \"O per\u00edmetro \u00e9 de %.2f\" % perimetro\n",
+      "name": "perimetro_triangulo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1c608badcba376be44a303115665fb45",
+  "iid": 4968653300695040,
+  "activity_revision": "1.1.0"
+}

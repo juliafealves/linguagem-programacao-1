@@ -2,8 +2,6 @@
 # Caixas de Cerâmica
 # (C) 2017, Júlia Alves / UFCG Programação 1
 
-import math
-
 # Entrada dos dados.
 capacidade = float(raw_input("Capacidade de revestimento? "))
 print "\n== Dados do vão a revestir =="
