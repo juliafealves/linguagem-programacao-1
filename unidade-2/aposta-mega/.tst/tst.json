@@ -1,0 +1,14 @@
+{
+  "files": {
+    "aposta_mega.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Mega Tripla\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\n# Entrada dos dados.\nnumero1 = int(raw_input())\nnumero2 = int(raw_input())\nnumero3 = int(raw_input())\n\n# Gerando os valores.\nnumero1 = numero1 % 11\nnumero2 = numero2 % 11\nnumero3 = numero3 % 11\n\n# Imprimindo.\nprint \"%02i-%02i-%02i\" % (numero1, numero2, numero3)",
+      "name": "aposta_mega.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ab47c796686d336f616b8f9dc372eb85",
+  "iid": 6720759732895744,
+  "activity_revision": "1.0.0"
+}
