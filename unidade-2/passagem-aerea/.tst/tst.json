@@ -1,0 +1,14 @@
+{
+  "files": {
+    "passagem_aerea.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Passagem A\u00e9rea\n# (C) 2017, J\u00falia Alves / UFCG Programa\u00e7\u00e3o 1\n\ntaxa_aeroporto = 51.0\ndesconto_avista = 0.75\ndesconto_parcelado6x = 0.95\n\n# Entrada dos dados\nmilhas = float(raw_input())\naliquota = float(raw_input())\n\n# Calculando valor da passagem\npassagem = milhas * aliquota + taxa_aeroporto\npassagem_avista = passagem * desconto_avista\n\n# Calulando parcelamento\npassagem_parcelada6x = passagem * desconto_parcelado6x\nparcela_6x = passagem_parcelada6x / 6\nparcela_10x = passagem / 10\n\n# Imprimindo o valor das passagens e forma de pagamento\nprint \"Valor da passagem: R$ %.2f\\n\" % passagem\nprint \"Pagamento:\\n1. \u00c0 vista. R$ %.2f\" % passagem_avista\nprint \"2. Em 6 parcelas. Total: R$ %.2f\" % passagem_parcelada6x\nprint \"   6 x R$ %.2f\" % parcela_6x\nprint \"3. Em 10 parcelas. Total: R$ %.2f\" % passagem\nprint \"   10 x R$ %.2f\" % parcela_10x\n",
+      "name": "passagem_aerea.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a630d87da00cc3f11c572af2f77f2905",
+  "iid": 5332773405458432,
+  "activity_revision": "1.1.0"
+}
