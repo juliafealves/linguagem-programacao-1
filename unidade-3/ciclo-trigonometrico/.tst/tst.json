@@ -1,0 +1,22 @@
+{
+  "files": {
+    "aluno.py": {
+      "category": "public",
+      "data": "# coding: utf-8\n# custo inss\n\n\n#Definindo vari\u00e1veis:\n\na = float(raw_input())\t\nif a<=360:\n\tif a>=1 and a<=89:\n\t\tprint 'Quadrante 1' \n\telif a==0 or a==90:\n\t\tprint 'Sobre eixos'\n\telif a>90 and a<180:\n\t\tprint 'Quadrante 2'\n\telif a == 180:\n\t\tprint 'Sobre eixos'\n\telif a>180 and a<270:\n\t\tprint 'Quadrante 3'\n\telif a == 270:\n\t\tprint 'Sobre eixos'\n\telif a>270 and a <360:\n\t\tprint 'Quadrante 4'\n\telif a == 360:\n\t\tprint 'Sobre eixos'\nif a>360:\n\tnum2=a%360\n\t\n\tif num2>=1 and num2<=89:\n\t\tprint 'Quadrante 1'\n\telif num2==0 or num2==90:\n\t\tprint 'Sobre eixos'\n\telif num2> 90 and num2 <180:\n\t\tprint 'Quadrante 2'\n\telif num2==180:\n\t\tprint 'Sobre eixos'\n\telif num2>180 and num2<270:\n\t\tprint 'Quadrante 3'\n\telif num2==270:\n\t\tprint 'Sobre eixos'\n\telif num2>270 and num2<360:\n\t\tprint 'Quadrante 4'\n\telif num2==360:\n\t\tprint 'Sobre eixos'\t\n\n"
+    },
+    "ciclo_trigonometrico.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Ciclo Trigonom\u00e9trico\n\nangulo_total = 360.0\n\n# Entrada dos dados referente aos graus.\nangulo = float(raw_input())\n\n# Verificar se deu a volta no ciclo.\nif (angulo > angulo_total):\n\tangulo = angulo % angulo_total\n\n# Verificando os quadrantes.\nif (angulo > 0 and angulo < 90):\n\tprint \"Quadrante 1\"\nelif (angulo > 90 and angulo < 180):\n\tprint \"Quadrante 2\"\nelif (angulo > 180 and angulo < 270):\n\tprint \"Quadrante 3\"\nelif (angulo > 270 and angulo < 360):\n\tprint \"Quadrante 4\"\nelif (angulo == 0 or angulo == 90 or angulo == 180 or angulo == 270 or angulo == 360):\n\tprint \"Sobre eixos\"\n",
+      "name": "ciclo_trigonometrico.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 165.67,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "eb13750da35aba6e2fd6bf115f54e3b9",
+  "iid": 5657791297486848,
+  "activity_revision": "1.0.20"
+}
