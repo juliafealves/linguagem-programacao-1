@@ -1,0 +1,18 @@
+{
+  "files": {
+    "roleta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Roleta - Unidade 3\n\nnumero = int(raw_input())\ncor = raw_input()\n\nnumero_sorteado = int(raw_input())\ncor_sorteada = raw_input()\n\npontuacao = 0\n\nif numero == numero_sorteado and cor == cor_sorteada:\n    pontuacao = 150\nelif numero == numero_sorteado and cor != cor_sorteada:\n    pontuacao = 100\nelif numero != numero_sorteado and cor == cor_sorteada:\n    pontuacao = 50\n\n    if numero_sorteado > numero:\n        pontuacao += 30\n    else:\n        pontuacao += 50\n\nprint pontuacao\n",
+      "name": "roleta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 69.76,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8c8fc0ea7851c93b4df0c184e9568013",
+  "iid": 6719643980922880,
+  "activity_revision": "1.0.1"
+}
