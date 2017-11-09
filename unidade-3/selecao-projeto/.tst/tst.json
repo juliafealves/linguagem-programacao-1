@@ -1,0 +1,18 @@
+{
+  "files": {
+    "selecao_projeto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Sele\u00e7\u00e3o Projeto - Unidade 3\n\nCRE_MINIMO = 7\nEXPERIENCIA_MINIMA = 6\n\n# Entrada das informa\u00e7\u00e3o de CRE, Experi\u00eancia e nota em entrevista.\ncre = float(raw_input())\nexperiencia = float(raw_input())\nnota_entrevista = float(raw_input())\n\n# Verifica a classifica\u00e7\u00e3o do aluno.\nif cre < CRE_MINIMO and experiencia < EXPERIENCIA_MINIMA:\n    mensagem = \"Candidato eliminado. CRE e experi\u00eancia abaixo do limite.\"\nelif cre < CRE_MINIMO:\n    mensagem = \"Candidato eliminado. CRE abaixo do limite.\"\nelif experiencia < EXPERIENCIA_MINIMA:\n    mensagem = \"Candidato eliminado. Experi\u00eancia abaixo do limite.\"\nelse:\n    if nota_entrevista <= 3:\n        mensagem = \"Candidato classificado.\"\n    else:\n        mensagem = \"Candidato aprovado.\"\n\nprint mensagem",
+      "name": "selecao_projeto.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 36.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "77b469858481cd4963298b9ccfe98c1d",
+  "iid": 6278791198408704,
+  "activity_revision": "1.0.1"
+}
