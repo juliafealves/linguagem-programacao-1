@@ -1,0 +1,18 @@
+{
+  "files": {
+    "classifica_corredor.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Classifica Corredor - Unidade 3\n\n# Entrada dos dados de dist\u00e2ncia (km) e tempo (h)\ndistancia = float(raw_input())\ntempo = float(raw_input())\n\n# Calculando a velocidade m\u00e9dia\nvelocidade = distancia / tempo\n\ncategoria = \"profissional\"\n\n# Verifica a categoria que o corredor pertence.\nif velocidade < 10.0:\n    categoria = \"amador\"\nelif 10.0 <= velocidade <= 15.0:\n    categoria = \"aspirante\"\n\n# Imprime a velocidade m\u00e9dia e a categoria do corredor.\nprint \"Velocidade: %.1fkm/h. Corredor %s.\" % (velocidade, categoria)\n",
+      "name": "classifica_corredor.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 10,\n      \"vhalstead\": 41.51,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4d15b04fb7832d4ec4bea80143ac572c",
+  "iid": 4804749589217280,
+  "activity_revision": "1.0.6"
+}
