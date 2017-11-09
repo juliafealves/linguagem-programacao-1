@@ -1,0 +1,18 @@
+{
+  "files": {
+    "depois_13.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Depois do 13 - Unidade 3\n\n# Definindo constante para n\u00famero restritivo.\nNUMERO_RESTRITO = 13\n\n# Entrada dos n\u00fameros.\nnumero1 = int(raw_input())\nnumero2 = int(raw_input())\nnumero3 = int(raw_input())\n\nresultado = numero1 + numero2 + numero3\n\n# Verificando a ocorr\u00eancia do n\u00famero restrito.\nif numero3 == NUMERO_RESTRITO:\n    resultado = numero1 + numero2\nelif numero2 == NUMERO_RESTRITO:\n    resultado = numero1\n\nif resultado == NUMERO_RESTRITO or numero1 == NUMERO_RESTRITO:\n    resultado = 0\n\nprint resultado",
+      "name": "depois_13.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 107.55,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2a05fa35f6e7d591b865a21aae5f46d9",
+  "iid": 6357603605020672,
+  "activity_revision": "1.1.3"
+}
