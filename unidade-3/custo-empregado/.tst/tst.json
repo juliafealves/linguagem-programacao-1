@@ -1,0 +1,18 @@
+{
+  "files": {
+    "custo_empregado.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Custo Empregado - Unidade 3\n\n# Constante referente aos percentuais de descontos.\nPERCENTUAL_VALE_TRANSPORTE = 0.06\nPERCENTUAL_FGTS = 0.08\nPERCENTUAL_INSS_EMPREGADOR = 0.12\n\n# Entrada dos dados referente ao sal\u00e1rio base (R$), dias trabalhados e custo di\u00e1rio com transporte.\nsalario_base = float(raw_input())\ndias_trabalho = int(raw_input())\ntransporte_dia = float(raw_input())\n\n# Calculando os gastos com transporte.\npercentual_transporte = salario_base * PERCENTUAL_VALE_TRANSPORTE\nvale_transporte_mes = dias_trabalho * transporte_dia\n\ndesconto_transporte = 0\nempregador_vale_transporte = 0\n\nif vale_transporte_mes > percentual_transporte:\n    desconto_transporte = percentual_transporte\n    empregador_vale_transporte = vale_transporte_mes - desconto_transporte\n\n# Verifica\u00e7\u00e3o da al\u00edquota de desconto do INSS.\naliquota_inss = 0.11\n\nif salario_base <= 1317.07:\n    aliquota_inss = 0.08\nelif 1317.07 < salario_base <= 2195.12:\n    aliquota_inss = 0.09\n\ndesconto_inss = salario_base * aliquota_inss\n\n# Calculando o sal\u00e1rio l\u00edquido.\nsalario_liquido = salario_base - (desconto_transporte + desconto_inss)\n\n# Custos do empregador\nempregador_fgts = salario_base * PERCENTUAL_FGTS\nempregador_inss = salario_base * PERCENTUAL_INSS_EMPREGADOR\nempregador_custo_total = salario_base + empregador_fgts + empregador_inss + empregador_vale_transporte\n\n# Imprimindo o relat\u00f3rio de gastos com sal\u00e1rios.\nprint \"O sal\u00e1rio base \u00e9 R$ %.2f\" % salario_base\nprint \"O custo mensal para o empregador \u00e9 de R$ %.2f\" % empregador_custo_total\nprint \"O sal\u00e1rio l\u00edquido que o trabalhador ir\u00e1 receber no m\u00eas \u00e9 R$ %.2f\" % salario_liquido",
+      "name": "custo_empregado.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 1,\n      \"lloc\": 20,\n      \"vhalstead\": 351.03,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "935c77307111b5c2edc2c0476e9978c5",
+  "iid": 4739122488934400,
+  "activity_revision": "1.0.2"
+}
