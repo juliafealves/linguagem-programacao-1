@@ -1,0 +1,18 @@
+{
+  "files": {
+    "mais_velho.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Mais velho - Unidade 3\n\n# Entrada dos dados de duas pessoas (nome e dia, m\u00eas e ano).\nnome_pessoa1 = raw_input()\ndia_pessoa1 = int(raw_input())\nmes_pessoa1 = int(raw_input())\nano_pessoa1 = int(raw_input())\n\nnome_pessoa2 = raw_input()\ndia_pessoa2 = int(raw_input())\nmes_pessoa2 = int(raw_input())\nano_pessoa2 = int(raw_input())\n\nmais_velha = nome_pessoa1\n\n# Verifica a pessoa mais velha.\nif (ano_pessoa2 < ano_pessoa1) or (ano_pessoa2 == ano_pessoa1 and mes_pessoa2 < mes_pessoa1) or (ano_pessoa2 == ano_pessoa1 and mes_pessoa2 == mes_pessoa1 and dia_pessoa2 < dia_pessoa1):\n    mais_velha = nome_pessoa2\nelif ano_pessoa2 == ano_pessoa1 and mes_pessoa2 == mes_pessoa1 and dia_pessoa2 == dia_pessoa1:\n    mais_velha = \"nenhuma\"\n\nprint mais_velha",
+      "name": "mais_velho.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 25,\n      \"vhalstead\": 54.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9e2c226f062f27b29b24cc3c2e05d5ef",
+  "iid": 5801111537582080,
+  "activity_revision": "1.0.2"
+}
