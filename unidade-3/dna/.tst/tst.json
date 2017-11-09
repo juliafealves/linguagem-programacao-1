@@ -1,0 +1,18 @@
+{
+  "files": {
+    "dna.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Tamanho DNA - Unidade 3\n\n# Recebe as sequ\u00eancia de DNA: adenina (A), guanina(G), citosina(C) e timina (T)\nsequencia_dna1 = raw_input()\nsequencia_dna2 = raw_input()\nsequencia_dna3 = raw_input()\n\n# Coleta os tamanhos de cada sequ\u00eancia, a fim de facilitar as compara\u00e7\u00f5es.\ntamanho_dna1 = len(sequencia_dna1)\ntamanho_dna2 = len(sequencia_dna2)\ntamanho_dna3 = len(sequencia_dna3)\n\n# Verifica a menor sequ\u00eancia de DNA e em caso de empate, a primeira a ser dada como entrada.\nif tamanho_dna1 == tamanho_dna2 or tamanho_dna1 == tamanho_dna3:\n    menor_dna = sequencia_dna1\nelif tamanho_dna2 == tamanho_dna3:\n    menor_dna = sequencia_dna2\nelif tamanho_dna1 < tamanho_dna2 and tamanho_dna1 < tamanho_dna3:\n    menor_dna = sequencia_dna1\nelif tamanho_dna2 < tamanho_dna1 and tamanho_dna2 < tamanho_dna3:\n    menor_dna = sequencia_dna2\nelif tamanho_dna3 < tamanho_dna1 and tamanho_dna3 < tamanho_dna2:\n    menor_dna = sequencia_dna3\n\n# Imprime a menor sequ\u00eancia de DNA.\nprint \"%s %i\" % (menor_dna, len(menor_dna))\n",
+      "name": "dna.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a6b622caa56711639afabd44da9e65ab",
+  "iid": 5258382290190336,
+  "activity_revision": "1.1.3"
+}
