@@ -1,0 +1,18 @@
+{
+  "files": {
+    "avaliacao_docente.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Avalia\u00e7\u00e3o Docente - Unidade 3\n\n# Constantes para melhor parametriza\u00e7\u00e3o do programa.\nMEDIA_MINIMA = 140\nQUANTIDADE_MINIMA_SEMESTRE = 4\nPONTOS_MINIMOS_ENSINO = 320\nPONTOS_MINIMOS_INTELECTUAL = 100\nPONTOS_MINIMOS_ORIENTACAO = 20\n\n# Entrada dos dados referente a quantidade de semestres e pontua\u00e7\u00f5es do docente.\nquantidade_semestre = int(raw_input())\npontuacao_ensino = float(raw_input())\npontuacao_intelectual = float(raw_input())\npontuacao_orientacao = float(raw_input())\npontuacao_administrativa = float(raw_input())\n\n# Calculando a m\u00e9dia do docente.\ntotal_pontos = (pontuacao_ensino + pontuacao_intelectual + pontuacao_orientacao + pontuacao_administrativa) / 4\n\nmensagem = \"Promo\u00e7\u00e3o deferida. Parab\u00e9ns!\"\n\n# Verificando se docente apto para promo\u00e7\u00e3o.\nif quantidade_semestre < QUANTIDADE_MINIMA_SEMESTRE:\n    mensagem = \"Promo\u00e7\u00e3o indeferida. N\u00famero de semestres insuficiente.\"\nelif pontuacao_ensino < PONTOS_MINIMOS_ENSINO or pontuacao_intelectual < PONTOS_MINIMOS_INTELECTUAL or pontuacao_orientacao < PONTOS_MINIMOS_ORIENTACAO:\n    mensagem = \"Promo\u00e7\u00e3o indeferida. Pontua\u00e7\u00e3o m\u00ednima n\u00e3o alcan\u00e7ada.\"\nelif total_pontos < MEDIA_MINIMA:\n    mensagem = \"Promo\u00e7\u00e3o indeferida. M\u00e9dia insuficiente.\"\n\nprint mensagem\n",
+      "name": "avaliacao_docente.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 136.16,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "17fb4a64f728ec44e9658d9ccca77947",
+  "iid": 6425881773867008,
+  "activity_revision": "1.1.1"
+}
