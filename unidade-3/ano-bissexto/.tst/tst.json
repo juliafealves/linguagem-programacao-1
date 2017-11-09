@@ -1,0 +1,18 @@
+{
+  "files": {
+    "ano_bissexto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: J\u00falia Alves\n# Matricula: 117211383\n# Atividade: Ano Bissexto - Unidade 3\n\nano = int(raw_input())\nmensagem = \"n\u00e3o \u00e9 bissexto\"\n\n# Verifica se o ano \u00e9 bissexto.\nif (ano % 400 == 0) or (ano % 4 == 0 and ano % 100 != 0):\n    mensagem = \"\u00e9 bissexto\"\n\nprint \"%i %s\" % (ano, mensagem)",
+      "name": "ano_bissexto.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 127.44,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a529fcf40aec1273dcbfecce38b32010",
+  "iid": 6460663895425024,
+  "activity_revision": "1.1.2"
+}
