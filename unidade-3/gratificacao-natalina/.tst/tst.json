@@ -1,0 +1,18 @@
+{
+  "files": {
+    "gratificacao_natalina.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Gratifica\u00e7\u00e3o Natalina - Unidade 3\n\n# C\u00f3digos dos poss\u00edveis cargos.\nCARGO_PRESIDENTE = '1'\nCARGO_DIRETOR = '2'\nCARGO_GERENTE = '3'\nCARGO_ENGENHEIRO_SENIOR = '4'\n\ncodigo_cargo = raw_input()\n\n# Verifca qual o cargo a ser calculada a gratifica\u00e7\u00e3o natalina.\nif codigo_cargo == CARGO_PRESIDENTE or codigo_cargo == CARGO_DIRETOR:\n    salario = 15000.00\n    if(codigo_cargo == CARGO_PRESIDENTE):\n        salario = 25000.00\nelse:\n    # Caso o cargo seja Gerente, Engenheiro S\u00eanior e J\u00fanior solicita a quantidade de faltas para calcular a gratifica\u00e7\u00e3o natalina.\n    faltas = int(raw_input())\n\n    if codigo_cargo == CARGO_GERENTE:\n        salario = 8000.00\n        gratificacao_dia = 2.00\n        gratificacao_natalina = 500.00\n    elif codigo_cargo == CARGO_ENGENHEIRO_SENIOR:\n        salario = 5000.00 \n        gratificacao_dia = 1.00\n        gratificacao_natalina = 300.00\n    else:\n        salario = 2800.00\n        gratificacao_dia = 0.70\n        gratificacao_natalina = 200.00\n    \n    # Calcula a gratifica\u00e7\u00e3o natalina proporcional caso o funcion\u00e1rio tenha faltado.\n    if faltas != 0:\n        gratificacao_natalina = (235 - faltas) * gratificacao_dia\n    \n    salario += gratificacao_natalina\n    \n    # Imprime o valor da grafica\u00e7\u00e3o nas condi\u00e7\u00f5es dos cargos Gerente, Engenheiro S\u00eanior e J\u00fanior.\n    print \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % gratificacao_natalina\n\n# Imprime o valor do sal\u00e1rio.\nprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario",
+      "name": "gratificacao_natalina.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 25,\n      \"vhalstead\": 129.66,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5c8cce394ecde70cf594075f03021724",
+  "iid": 6227175514570752,
+  "activity_revision": "1.0.2"
+}
