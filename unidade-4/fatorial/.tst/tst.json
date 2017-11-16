@@ -1,0 +1,18 @@
+{
+  "files": {
+    "fatorial.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Fatorial - Unidade 4\n\nnumero = int(raw_input())\nfatorial = 1\n\nfor valor in range(1, numero + 1):\n    fatorial *= valor\n\nprint fatorial",
+      "name": "fatorial.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "106834242ce6d4737c099207fa4e2794",
+  "iid": 5373008793305088,
+  "activity_revision": "1.1.1"
+}
