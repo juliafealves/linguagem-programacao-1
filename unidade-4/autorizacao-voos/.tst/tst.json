@@ -1,0 +1,18 @@
+{
+  "files": {
+    "autorizacao_voos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Autoriza\u00e7\u00e3o Voos - Unidade 4\n\n# Entrada dos dados tempo dispon\u00edvel e quantidade de voos.\ntempo_disponivel = int(raw_input())\navioes = int(raw_input())\n\nvoos_autorizados = 0\n\n# Contabiliza os voos autorizados e verifica se existe tempo h\u00e1bil para executar a decolagem.\nfor quantidade in range(avioes):\n    tempo_voo = int(raw_input())\n\n    if tempo_disponivel >= tempo_voo:\n        voos_autorizados += 1\n        tempo_disponivel -= tempo_voo\n    elif tempo_disponivel <= 0:\n        break\n\n# Imprime os voos autorizados.\nprint \"%i voo(s) autorizados.\" % voos_autorizados",
+      "name": "autorizacao_voos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 51.89,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c3541a5e5467a90bbc66c8ddf506c2eb",
+  "iid": 4978464775995392,
+  "activity_revision": "1.1.4"
+}
