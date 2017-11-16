@@ -1,0 +1,18 @@
+{
+  "files": {
+    "dna.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: DNA - Unidade 4\n\n# Recebe a entrada duas sequ\u00eancias de mol\u00e9culas de DNA.\nsequencia_dna1 = raw_input()\nsequencia_dna2 = raw_input()\n\nnucleotideos_iguais = 0\nsemelhantes = \"nao\"\n\n# Verifica se s\u00e3o de mesmo tamanho e quantifica os nucleot\u00eddeos que est\u00e3o na mesma posi\u00e7\u00e3o e s\u00e3o iguais.\nif len(sequencia_dna1) == len(sequencia_dna2):\n    for indice in range(len(sequencia_dna1)):\n        if sequencia_dna1[indice] == sequencia_dna2[indice]:\n            nucleotideos_iguais += 1\n\n# Verifica se a quantidade de nucleot\u00eddeos \u00e9 maior que a metade do tamanho da cadeia.\nif nucleotideos_iguais > (len(sequencia_dna1)/2):\n    semelhantes = \"sim\"\n\nprint semelhantes\n\n",
+      "name": "dna.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 1,\n      \"lloc\": 10,\n      \"vhalstead\": 41.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a81183eb8b33d783289f918df61b99ad",
+  "iid": 6039503697346560,
+  "activity_revision": "1.0.1"
+}
