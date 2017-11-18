@@ -1,0 +1,14 @@
+{
+  "files": {
+    "embarque_organizado.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Embarque Organizado - Unidade 5\n\n# Recebe uma sequ\u00eancia de n\u00fameros inteiros separados por espa\u00e7o.\npoltronas = raw_input()\n\n# Separa a entrada dos dados referente ao n\u00famero da poltrona.\npoltronas = poltronas.split()\n\ntamanho = len(poltronas)\nindice = 0\nimpar = 0\npar = tamanho - 1\n\nmensagem = \"ok\"\n\n# Verdadeiro enquanto o \u00edndice for menor que o tamanho da lista.\nwhile indice < tamanho:\n    if poltronas[indice] != \"\":\n        if int(poltronas[indice]) % 2 != 0:\n            impar = indice\n        else:\n            par = indice\n\n    # Verifica se existe um valor par antes do valor \u00edmpar atrav\u00e9s do \u00edndice.\n    if par < impar:\n        mensagem = \"erro\"\n        break\n\n    indice += 1\n\nprint mensagem\n",
+      "name": "embarque_organizado.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0f1ff9daafc76c366b1bf65b6b6e7742",
+  "iid": 5798035267256320,
+  "activity_revision": "1.0.1"
+}
