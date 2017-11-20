@@ -1,0 +1,18 @@
+{
+  "files": {
+    "mais_ocorrencias_caractere.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Mais Ocorr\u00eancias Caractere - Unidade 5\n\n# Recebe uma entrada inicial.\nentrada = raw_input()\npalavras = []\n\n# Recebe todas as entradas poss\u00edveis enquanto n\u00e3o digitar a palavra \"fim\"\nwhile entrada != \"fim\":\n    palavras.append(entrada)\n    entrada = raw_input()\n\n# Entradas referentes ao caracter escolhido para busca e quantidade m\u00ednima de ocorr\u00eancia deste caracter.\ncaracter_escolhido = raw_input()\nocorrencia_minima = int(raw_input())\n\n# Vari\u00e1vel para verificar se encontrou alguma palavra.\npalavra_encontrada = 0\n\n# Busca o caracterer em todas as palavras e verifica se atende as quantidade m\u00ednima de ocorr\u00eancia.\nfor palavra in palavras:\n    quantidade_ocorrencia = 0\n\n    for caracter in palavra:\n        if caracter == caracter_escolhido:\n            quantidade_ocorrencia += 1\n    \n    if quantidade_ocorrencia > ocorrencia_minima:\n        palavra_encontrada += 1\n        print palavra\n\n# Verifica se nenhuma palavra foi encontrada.\nif palavra_encontrada == 0:\n    print \"Nenhuma palavra encontrada.\"",
+      "name": "mais_ocorrencias_caractere.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 20,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e41790d1c4fd1dc2a80675f631db7503",
+  "iid": 6376655945728000,
+  "activity_revision": "1.0.2"
+}
