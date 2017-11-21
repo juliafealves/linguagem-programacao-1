@@ -1,7 +1,14 @@
 {
-  "files": {},
-  "iid": 5625161357197312,
+  "files": {
+    "limite_acude.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Limite A\u00e7ude - Unidade 5\n\n# Recebe as entradas referente ao limite superior do a\u00e7ude e o n\u00edvel atual do a\u00e7ude.\nlimite_superior = float(raw_input())\nnivel = float(raw_input())\n\n# Enquanto n\u00e3o atingir o limite superior do a\u00e7ude ser\u00e1 realizada opera\u00e7\u00f5es no a\u00e7ude.\nwhile nivel < limite_superior:\n    operacao = raw_input()\n    operacao = operacao.split()\n\n    # Caso a opera\u00e7\u00e3o seja \"demanda\" ser\u00e1 subtra\u00eddo \u00e1gua do a\u00e7ude. Caso contr\u00e1rio, adicionar\u00e1 n\u00edvel no a\u00e7ude.\n    if operacao[0] == \"demanda\":\n        nivel -= float(operacao[1])\n\n        # Caso o n\u00edvel seja abaixo de 0, deve-se setar o n\u00edvel para positivo.\n        if nivel < 0:\n            nivel = 0.0\n    else:\n        nivel += float(operacao[1])\n\n# Imprime o n\u00edvel do a\u00e7ude e informe sobre a libera\u00e7\u00e3o de \u00e1gua.\nprint \"A\u00e7ude passou a liberar \u00e1gua.\"\nprint \"N\u00edvel: %.2f\" % nivel\n",
+      "name": "limite_acude.py"
+    }
+  },
   "kind": "assignment",
-  "activity_revision": "1.0.1",
-  "name": null
+  "name": null,
+  "checksum": "aea3532023ad7cf4e2e602d4901760a3",
+  "iid": 5625161357197312,
+  "activity_revision": "1.0.1"
 }
