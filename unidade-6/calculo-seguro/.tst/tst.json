@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_seguro = getattr(undertest, 'calcula_seguro', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert calcula_seguro(2000.0, [21, True, True, True, True, True, 'Misto']) == [120, \"Risco Alto\", 600.0]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "calculo_seguro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: C\u00e1lculo de Seguro - Unidade 6\n\n# Verifica os pontos de acordo com a idade.\t\ndef calcular_pontos_idade(idade):\t\n\tif idade <= 21 or idade > 60:\n\t\treturn 20\n\telif 22 <= idade <= 30:\n\t\treturn 15\n\telif 31 <= idade <= 40: \n\t\treturn 12\n\t\t\n\treturn 10\n\n# Se Casado (True) retorna 10pts, se Solteiro retorna 20pts.\ndef verificar_casado(estado_civil):\n\tif estado_civil:\n\t\treturn 10\n\t\n\treturn 20\n\n# Verifica \u00e1rea de risco do assegurado.\ndef verficar_area_risco(area_risco):\n\tif area_risco:\n\t\treturn 20\n\t\n\treturn 10\n\n# Verifica se possui port\u00e3o eletr\u00f4nico.\ndef verificar_portao(portao_eletronico):\n\tif portao_eletronico:\n\t\treturn 20\n\t\n\treturn 10\n\n# Verifica se reside em casa.\ndef verificar_moradia(moradia):\n\tif moradia:\n\t\treturn 20\n\t\n\treturn 10\n\t\n# Verifica se reside em casa pr\u00f3pria.\ndef verificar_casa_propria(casa_propria):\n\tif casa_propria:\n\t\treturn 10\n\t\n\treturn 20\n\n# Verifica o tipo de uso do ve\u00edculo.\ndef verificar_uso_veiculo(uso):\n\tif uso == \"Lazer\" or uso == \"Misto\":\n\t\treturn 20\n\t\n\treturn 10\n\n# Calcula o valor do seguro.\ndef calcula_seguro(valor_veiculo, questionario):\n\tidade = questionario[0]\n\testado_civil = questionario[1]\n\tarea_risco = questionario[2]\n\tportao_eletronico = questionario[3]\n\tmoradia = questionario[4]\n\tcasa_propria = questionario[5]\n\tuso_veiculo = questionario[6]\n\t\n\tpontos = calcular_pontos_idade(idade)\n\tpontos += verificar_casado(estado_civil)\n\tpontos += verficar_area_risco(area_risco)\n\tpontos += verificar_portao(portao_eletronico)\n\tpontos += verificar_moradia(moradia)\n\tpontos += verificar_casa_propria(casa_propria)\n\tpontos += verificar_uso_veiculo(uso_veiculo)\n\t\n\tif pontos <= 80:\n\t\tvalor_pago = 0.1 * valor_veiculo\n\t\trisco = \"Risco Baixo\"\n\telif 80 < pontos <= 100:\n\t\tvalor_pago = 0.2 * valor_veiculo\n\t\trisco = \"Risco Medio\"\n\telse:\n\t\tvalor_pago = 0.3 * valor_veiculo\n\t\trisco = \"Risco Alto\"\n\t\t\n\treturn [pontos, risco, valor_pago]\n\n\t\n\n\n",
+      "name": "calculo_seguro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2772d46b0eedf6a4a545caa0fc1c57a7",
+  "iid": 5341976983502848,
+  "activity_revision": "1.0.0"
+}
