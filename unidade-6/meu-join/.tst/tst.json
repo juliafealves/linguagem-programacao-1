@@ -1,0 +1,18 @@
+{
+  "files": {
+    "meu_join.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Meu Join - Unidade 6\n\n# Concatena os caracteres da sequ\u00eancia com o delimitador informado.\n# N\u00e3o inclui o delimitador no \u00faltimo caracter.\ndef meu_join(delimitador, sequencia_string):\n    nova_string = \"\"\n\n    for indice in range(len(sequencia_string)):\n        if indice == (len(sequencia_string) - 1):\n            nova_string += sequencia_string[indice]\n        else:\n            nova_string += sequencia_string[indice] + delimitador\n\n    return nova_string\n",
+      "name": "meu_join.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nmeu_join = getattr(undertest, 'meu_join', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert meu_join(\"*\", \"abc\") == \"a*b*c\"\n\n   def test_exemplo1(self):\n     assert meu_join(\"*\", [\"a\", \"b\", \"c\"]) == \"a*b*c\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a43ea99a5651379554a7a3d42075c807",
+  "iid": 5863008190332928,
+  "activity_revision": "1.0.0"
+}
