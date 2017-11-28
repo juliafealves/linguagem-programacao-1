@@ -1,0 +1,14 @@
+{
+  "files": {
+    "peso_ideal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Peso Ideal com Fun\u00e7\u00e3o - Unidade 6\n\nFEMININO = \"F\"\nFIM_PROGRAMA = \"****\"\n\n\n# Calcula o peso ideal de acordo com o sexo.\ndef calcular_peso(sexo, altura):\n    if sexo.upper() == FEMININO:\n        return 62.1 * altura - 44.7\n\n    return 72.7 * altura - 58\n\nsexos = []\npesos = []\n\n# Recebe as entradas do programa.\nwhile True:\n    entrada = raw_input()\n\n    if entrada == FIM_PROGRAMA:\n        break\n\n    entrada = entrada.split()\n    sexo = entrada[0]\n    altura = float(entrada[1])\n\n    pesos.append(calcular_peso(sexo, altura))\n    sexos.append(sexo)\n\n# Imprime as sa\u00eddas.\nfor indice in range(len(pesos)):\n    sexo = \"Homem\"\n\n    if sexos[indice].upper() == FEMININO:\n        sexo = \"Mulher\"\n\n    print \"%s: peso ideal \u00e9 %.1f\" % (sexo, pesos[indice])\n",
+      "name": "peso_ideal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a20ded48320b90667594250ab8b77f52",
+  "iid": 6450875396521984,
+  "activity_revision": "1.0.5"
+}
