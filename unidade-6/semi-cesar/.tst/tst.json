@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncesar = getattr(undertest, 'cesar', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        assert cesar(\"exemplo\", 4) == \"ibiqtps\"\n    \n    def test_exemplo_2(self):\n        assert cesar(\"Exemplo 2!\", 4) == \"Ebiqtps 2!\"\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "semi_cesar.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Semi C\u00e9sar - Unidade 6\n\n# Criptografa a mensagem deslocando n para direita em rela\u00e7\u00e3o ao alfabeto.\ndef cesar(mensagem, deslocamento):\n    alfabeto = \"abcdefghijklmnopqrstuvwxyz\"\n    tamanho_alfabeto = len(alfabeto)\n    criptografia = \"\"\n\n    for caracter in mensagem:\n        caracter_encontrado = False\n\n        for indice in range(tamanho_alfabeto):\n            if caracter == alfabeto[indice]:\n                valor_deslocar = deslocamento + indice\n\n                # Condicional para deslocamento ciclico.\n                if  valor_deslocar > (tamanho_alfabeto - 1):\n                    valor_deslocar = valor_deslocar - tamanho_alfabeto\n\n                criptografia += alfabeto[valor_deslocar]\n                caracter_encontrado = True\n        \n        # Caso n\u00e3o seja um caracter v\u00e1lido.\n        if not(caracter_encontrado):\n            criptografia += caracter\n    \n    return criptografia\n",
+      "name": "semi_cesar.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "435732e06e1e96d97920bd26e2883430",
+  "iid": 5800780556664832,
+  "activity_revision": "1.0.0"
+}
