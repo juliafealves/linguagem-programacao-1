@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nordena_tipos = getattr(undertest, 'ordena_tipos', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert ordena_tipos(['1a', '2', 'e', '4', '4.4', 'e6', '8']) == ['2', '4', '8', 'e', '1a', '4.4', 'e6']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "ordena_tipos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Ordena Tipos - Unidade 6\n\n# Retorna uma lista com tipos ordenados \n# (n\u00fameros inteiros, letras, outros tipos).\ndef ordena_tipos(lista):\n    inteiros = []\n    letras = []\n    outros = []\n\n    for elemento in lista:\n        if elemento.isdigit():\n            inteiros.append(elemento)\n        elif elemento.isalpha():\n            letras.append(elemento)\n        else:\n            outros.append(elemento)\n\n    return inteiros + letras + outros",
+      "name": "ordena_tipos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7dbfc59eac19dadc918841d3f6d7d755",
+  "iid": 5787185039015936,
+  "activity_revision": "1.0.0"
+}
