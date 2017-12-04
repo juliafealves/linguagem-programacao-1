@@ -1,0 +1,18 @@
+{
+  "files": {
+    "vogais_primeiro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Vogais Primeiro - Unidade 6\n\n# Recebe uma frase e coloca as vogais antes \n# que as consoantes na ordem que aparecem\ndef vogais_primeiro(frase):\n    vogais = \"\"\n    consoantes = \"\"\n\n    for letra in frase:\n        if letra in \"aeiou\":\n            vogais += letra\n        else:\n            consoantes += letra\n    \n    return vogais + consoantes\n",
+      "name": "vogais_primeiro.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nvogais_primeiro = getattr(undertest, 'vogais_primeiro', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        assert vogais_primeiro(\"exemplo\") == \"eeoxmpl\"\n    \n    def test_exemplo_2(self):\n        assert vogais_primeiro(\"Programacao 1\") == \"oaaaoPrgrmc 1\"\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c2b1b6cd5fce51516bd366a89c35d61d",
+  "iid": 5835518453481472,
+  "activity_revision": "1.0.0"
+}
