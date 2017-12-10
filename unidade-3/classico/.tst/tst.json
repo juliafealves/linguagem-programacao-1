@@ -1,0 +1,18 @@
+{
+  "files": {
+    "classico.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Cl\u00e1ssico - Unidade 3\n\n# Entradas dos gols Campinense e Treze.\ngols_campinense = int(raw_input())\ngols_treze = int(raw_input())\n\n# Verifica quem ganhou o cl\u00e1sico.\nif gols_campinense > gols_treze:\n    print \"Campinense\"\nelif gols_treze > gols_campinense:\n    print \"Treze\"\nelse:\n    print \"Empate\"",
+      "name": "classico.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 9.51,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9d902488db0916b52ed7baeea8ced37b",
+  "iid": 5818959743942656,
+  "activity_revision": "1.1.1"
+}
