@@ -1,0 +1,18 @@
+{
+  "files": {
+    "concurso.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Concurso - Unidade 3\n\n# Recebe como entrada as notas e idade do candidato 1.\ncandidato1_escrita = float(raw_input())\ncandidato1_didatica = float(raw_input())\ncandidato1_titulacao = float(raw_input())\ncandidato1_idade = int(raw_input())\n\n# Recebe como entrada as notas e idade do candidato 2.\ncandidato2_escrita = float(raw_input())\ncandidato2_didatica = float(raw_input())\ncandidato2_titulacao = float(raw_input())\ncandidato2_idade = int(raw_input())\n\n# Calcula a nota final dos candidatos 1 e 2.\ncandidato1_nota_final = candidato1_escrita * 0.3 + candidato1_didatica * 0.4 + candidato1_titulacao * 0.3\ncandidato2_nota_final = candidato2_escrita * 0.3 + candidato2_didatica * 0.4 + candidato2_titulacao * 0.3\n\n# Verifica o candidato aprovado.\nif candidato1_nota_final == candidato2_nota_final:\n    if candidato1_idade > candidato2_idade:\n        print \"O primeiro candidato foi aprovado com m\u00e9dia %.1f.\" % candidato1_nota_final\n    elif candidato1_idade < candidato2_idade:\n        print \"O segundo candidato foi aprovado com m\u00e9dia %.1f.\" % candidato2_nota_final\n    else:\n        print \"Empate.\"\nelse:\n    if candidato1_nota_final > candidato2_nota_final:\n        print \"O primeiro candidato foi aprovado com m\u00e9dia %.1f.\" % candidato1_nota_final\n    else:\n        print \"O segundo candidato foi aprovado com m\u00e9dia %.1f.\" % candidato2_nota_final",
+      "name": "concurso.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 262.33,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d8defbd0c7d876ceaf34e24f22f965da",
+  "iid": 5870760606302208,
+  "activity_revision": "1.0.2"
+}
