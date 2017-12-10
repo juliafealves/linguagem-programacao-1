@@ -1,0 +1,18 @@
+{
+  "files": {
+    "pedagio.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Ped\u00e1gio - Unidade 3\n\ntransporte = raw_input()\nvalor = 0\n\n# Verifica o tipo de ped\u00e1gio de acordo com o transporte.\nif transporte ==  \"Autom\u00f3vel utilit\u00e1rio\" or transporte == \"\u00d4nibus\":\n    valor = 11.4\nelif transporte == \"Caminh\u00e3o\":\n    valor = 9.6\nelif transporte == \"Motocicleta\":\n    valor = 5.7\n\n# Coleta o eixo e calcula o ped\u00e1gio.\nif transporte == \"\u00d4nibus\" or transporte == \"Caminh\u00e3o\":\n    eixo = int(raw_input())\n    valor *= eixo\n\n# Imprime o valor do ped\u00e1gio, quando existir.\nif valor == 0:\n    print \"Ve\u00edculo n\u00e3o cadastrado.\"\nelse:\n    print \"Valor a pagar: R$ %.2f.\" % valor",
+      "name": "pedagio.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 1,\n      \"lloc\": 15,\n      \"vhalstead\": 93.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "95c7f1bf0e2488e56d593f8d38dc2ff6",
+  "iid": 5318706448039936,
+  "activity_revision": "1.0.2"
+}
