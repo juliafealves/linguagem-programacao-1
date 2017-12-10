@@ -1,0 +1,18 @@
+{
+  "files": {
+    "dobro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: \u00c9 Dobro - Unidade 3\n\n# Recebe como entrada os n\u00fameros.\nnumero1 = float(raw_input())\nnumero2 = float(raw_input())\n\n# Verifica se algum dos n\u00fameros \u00e9 o dobro do outro.\nif numero1 * 2 == numero2 or numero2 * 2 == numero1:\n    print \"SIM\"\nelse:\n    print \"NAO\"",
+      "name": "dobro.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 2,\n      \"lloc\": 6,\n      \"vhalstead\": 49.83,\n      \"header\": 9\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7ba7146821ce6ac69b6ccdd563f08bb1",
+  "iid": 6341423523692544,
+  "activity_revision": "1.0.3"
+}
