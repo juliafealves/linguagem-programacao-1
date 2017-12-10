@@ -1,0 +1,18 @@
+{
+  "files": {
+    "prof_equacoes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Prof Equa\u00e7\u00f5es - Unidade 3\n\nimport math\n\n# Recebe as entradas as ra\u00edzes reais.\na = float(raw_input())\nb = float(raw_input())\nc = float(raw_input())\n\n# Calcula o valor de delta.\ndelta = b ** 2 - (4 * a * c)\n\n# Verifica se o delta \u00e9 positivo para calcular as ra\u00edzes.\nif delta >= 0:\n    x1 = (- b + math.sqrt(delta)) / (2 * a)\n    x2 = (- b - math.sqrt(delta)) / (2 * a)\n\n    # Verifica se as ra\u00edzes s\u00e3o iguais.\n    if x1 == x2:\n        print \"x = %.2f\" % x1\n    else:\n     print \"x1 = %.2f\" % x1\n     print \"x2 = %.2f\" % x2\nelse:\n    print \"sem raizes reais\"",
+      "name": "prof_equacoes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 245.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "aab0f86d98a9398147d870eb6f851ae3",
+  "iid": 5874706339069952,
+  "activity_revision": "1.1.2"
+}
