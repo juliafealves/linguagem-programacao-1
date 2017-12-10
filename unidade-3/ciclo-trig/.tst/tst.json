@@ -1,0 +1,18 @@
+{
+  "files": {
+    "ciclo_trig.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Ciclo Trig - Unidade 3\n\n# Entrada dos dados referente aos graus.\nangulo = float(raw_input())\n\n# Verificar se deu a volta no ciclo.\nif angulo > 360:\n\tangulo = angulo % 360\n\n# Verificando os quadrantes.\nif 0 < angulo < 90:\n    print \"Quadrante 1\"\nelif 90 < angulo < 180:\n\tprint \"Quadrante 2\"\nelif 180 < angulo < 270:\n    print \"Quadrante 3\"\nelif 270 < angulo < 360:\n    print \"Quadrante 4\"\nelse:\n    print \"Sobre eixos\"",
+      "name": "ciclo_trig.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 165.67,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a65af301f8552ced71c92fae30e3cbda",
+  "iid": 5570971889041408,
+  "activity_revision": "1.0.3"
+}
