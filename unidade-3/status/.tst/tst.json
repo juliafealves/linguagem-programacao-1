@@ -1,0 +1,18 @@
+{
+  "files": {
+    "status.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Status - Unidade 3\n\n# Recebe as 3 notas do aluno e a quantidade de faltas.\nnota1 = float(raw_input())\nnota2 = float(raw_input())\nnota3 = float(raw_input())\nfaltas = int(raw_input())\n\n# Calculando a m\u00e9dia\nfrequencia = (30.0 - faltas) / 30.0\n\n# Verifica a situa\u00e7\u00e3o do aluno pela frequ\u00eancia.\nif frequencia > 0.75:\n    # Calcula a m\u00e9dia aritm\u00e9tica do aluno.\n    media = (nota1 + nota2 + nota3) / 3\n\n    # Verifica a situa\u00e7\u00e3o do aluno pela m\u00e9dia.\n    if media >= 7:\n        mensagem = \"aprovado por media\"\n    elif 4 <= media < 7:\n        mensagem = \"prova final\"\n    else:\n        mensagem = \"reprovado por nota\"\nelse:\n    mensagem = \"reprovado por faltas\"\n\nprint mensagem",
+      "name": "status.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 1,\n      \"lloc\": 13,\n      \"vhalstead\": 81.75,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "989765ca02e1adcd78ceec954f3d76f7",
+  "iid": 6357857947615232,
+  "activity_revision": "1.1.1"
+}

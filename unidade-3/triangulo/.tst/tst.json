@@ -2,7 +2,7 @@
   "files": {
     "triangulo.py": {
       "category": "answer",
-      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: \u00c9 Tri\u00e2ngulo - Unidade 3\n\na = float(raw_input())\nb = float(raw_input())\nc = float(raw_input())\n\nverificando_a = abs(b - c) < a < (b + c)\nverificando_b = abs(a - c) < b < (a + c)\nverificando_c = abs(a - b) < c < (a + b)\n\nif verificando_a or verificando_b or verificando_c:\n    perimetro = a + b + c\n    print \"triangulo valido. %.f\" % perimetro\nelse:\n    print \"triangulo invalido.\"",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: \u00c9 Tri\u00e2ngulo - Unidade 3\n\n# Recebe como entradas os lados do tri\u00e2ngulo.\na = float(raw_input())\nb = float(raw_input())\nc = float(raw_input())\n\n# Verifica se o os lados do tri\u00e2ngulo s\u00e3o v\u00e1lidos.\nverificando_a = abs(b - c) < a < (b + c)\nverificando_b = abs(a - c) < b < (a + c)\nverificando_c = abs(a - b) < c < (a + b)\n\n# Caso seja um tri\u00e2ngulo calcula o seu per\u00edmetro.\nif verificando_a or verificando_b or verificando_c:\n    perimetro = a + b + c\n    print \"triangulo valido. %.f\" % perimetro\nelse:\n    print \"triangulo invalido.\"",
       "name": "triangulo.py"
     },
     "qcheck.json": {
@@ -12,7 +12,7 @@
   },
   "kind": "assignment",
   "name": null,
-  "checksum": "75ac88b3d55ac458f8c213ec21680100",
+  "checksum": "10f5ef44d3a4a03edbb46813e3785c47",
   "iid": 6696871795884032,
   "activity_revision": "1.1.1"
 }
