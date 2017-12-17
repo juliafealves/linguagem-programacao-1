@@ -1,0 +1,18 @@
+{
+  "files": {
+    "media_extremos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: M\u00e9dia dos Extremos - Unidade 4\n\n# Recebe como entrada a quantidade de n\u00fameros a serem lidos.\n# Deve ser maior um n\u00famero inteiro maior que 0.\nquantidade_entradas = int(raw_input())\n\nnumeros = []\nmaior = 0\nmenor = 0\n\n# Coleta os n\u00fameros inteiros da entrada.\nfor entrada in range(quantidade_entradas):\n    numero = int(raw_input())\n\n    # Verifica qual o maior e menor n\u00famero.\n    if entrada == 0:\n        maior = numero\n        menor = numero\n    elif numero < menor:\n        menor = numero\n    elif numero > maior:\n        maior = numero\n\n    numeros.append(numero)\n\n# Calcula m\u00e9dia aritm\u00e9tica dos extremos.\nmedia = (maior + menor) / 2.0\n\nquantidade_acima_media = 0\nquantidade_abaixo_media = 0\n\n# Conta quantidade de n\u00fameros menores e maiores que a m\u00e9dia.\nfor numero in numeros:\n    if numero > media:\n        quantidade_acima_media += 1\n    elif numero < media:\n        quantidade_abaixo_media += 1\n\nprint \"Menor n\u00famero: %i\" % menor\nprint \"Maior n\u00famero: %i\" % maior\nprint \"M\u00e9dia dos extremos: %.2f\" % media\nprint \"%i n\u00famero(s) abaixo da m\u00e9dia\" % quantidade_abaixo_media\nprint \"%i n\u00famero(s) acima da m\u00e9dia\" % quantidade_acima_media",
+      "name": "media_extremos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 24,\n      \"vhalstead\": 171.3,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a4347c786883a5b929e92159071ec2a5",
+  "iid": 5898367783665664,
+  "activity_revision": "1.1.1"
+}
