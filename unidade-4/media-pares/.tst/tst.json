@@ -1,0 +1,18 @@
+{
+  "files": {
+    "media_pares.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: M\u00e9dia dos Pares - Unidade 4\n\n# Recebe como entrada a quantidade de n\u00fameros a serem lidos.\n# Deve ser maior um n\u00famero inteiro maior que 0.\nquantidade_entradas = int(raw_input())\n\nquantidade_pares = 0\nsoma_pares = 0\nnumeros = []\n\n# Coleta os n\u00fameros inteiros da entrada.\nfor entrada in range(quantidade_entradas):\n    numero = int(raw_input())\n\n    # Verifica se o n\u00famero \u00e9 par.\n    if numero % 2 == 0:\n        soma_pares += numero\n        quantidade_pares += 1.0\n\n    numeros.append(numero)\n\n# Calcula m\u00e9dia aritm\u00e9tica dos n\u00fameros pares.\nmedia_pares = soma_pares / quantidade_pares\n\nquantidade_menor_media = 0\n\n# Conta quantidade de n\u00fameros menores que a m\u00e9dia.\nfor numero in numeros:\n    if numero < media_pares:\n        quantidade_menor_media += 1\n\nprint \"soma: %i\" % soma_pares\nprint \"m\u00e9dia: %.1f\" % media_pares\nprint \"%i n\u00famero(s) abaixo da m\u00e9dia\" % quantidade_menor_media",
+      "name": "media_pares.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 125.1,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1426dae6f7f8d98fcc631b884e35c28c",
+  "iid": 6409021141549056,
+  "activity_revision": "1.1.4"
+}
