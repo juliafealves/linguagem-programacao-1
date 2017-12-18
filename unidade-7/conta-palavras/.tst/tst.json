@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nconta_palavras = getattr(undertest, 'conta_palavras', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       assert conta_palavras(5, \"zero:um:dois:tres:quatro:cinco\") == 2\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "conta_palavras.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Conta Palavras - Unidade 7\n\n\n# Retorna a quantidade de palavras com\n# comprimento maior ou igual a \"tamanho\".\n# Recebe como par\u00e2metro um inteiro \"tamanho e\n# uma string(\"palavras\") com palavras separadas por \":\".\ndef conta_palavras(tamanho, palavras):\n    palavras = palavras.split(':')\n    conta_palavra = 0\n\n    for palavra in palavras:\n        if len(palavra) >= tamanho:\n            conta_palavra += 1\n\n    return conta_palavra",
+      "name": "conta_palavras.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "57703e5372869f349f2d2c34ff1ec1b0",
+  "iid": 5883574842556416,
+  "activity_revision": "1.0.0"
+}
