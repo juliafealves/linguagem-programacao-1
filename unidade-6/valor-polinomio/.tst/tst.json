@@ -1,0 +1,19 @@
+{
+  "files": {
+    "valor_polinomio.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Valor Polin\u00f4mio - Unidade 7\n\n\n# Retorna o c\u00e1lculo de um polin\u00f4mio.\n# Recebe como par\u00e2metro um lista de coeficientes\n# ordenado pelo \u00edndice. E valor a ser substitu\u00eddo no polin\u00f4mio.\ndef valor_polinomio(polinomio, valor):\n    resultado = 0\n\n    for indice in range(len(polinomio)):\n        resultado += (valor ** indice) * polinomio[indice]\n\n    return resultado\n",
+      "name": "valor_polinomio.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nvalor_polinomio = getattr(undertest, 'valor_polinomio', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert valor_polinomio([-5, 0, 2, 0, 3], 10) == 30195\n        assert valor_polinomio([-5, 0, 2, 0, 3], 2) == 51\n        assert valor_polinomio([-5, 0, 2, 0, 3], 0) == -5\n\n    def test_basico_2(self):\n        assert valor_polinomio([3, 1], 100) == 103\n        assert valor_polinomio([3, 1], 8) == 11\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7e5914bea2f3fe02e46bbc6ab54177b1",
+  "iid": 5837370926563328,
+  "activity_revision": "1.0.0"
+}
