@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nmaior_palavra = getattr(undertest, 'maior_palavra', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert maior_palavra(\"eu acredito que seja um bom exemplo\") == \"acredito\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "maior_palavra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Maior Palavra de Uma Frase - Unidade 6\n\n\n# Retorna a maior palavra de um frase.\n# Caso tenha mais de uma palavra maior, a \u00faltima ser\u00e1 retornada.\ndef maior_palavra(frase):\n    # Artif\u00edcio para contabilizar a \u00faltima palavra.\n    frase += ' '\n\n    maior_palavra = ''\n    palavra = ''\n\n    for letra in frase:\n        if letra != ' ':\n            palavra += letra\n        else:\n            if len(maior_palavra) <= len(palavra):\n                maior_palavra = palavra\n\n            palavra = ''\n\n    return maior_palavra",
+      "name": "maior_palavra.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "63eca92167a6ea52b6645a364d0b1923",
+  "iid": 5820890063306752,
+  "activity_revision": "1.0.0"
+}
