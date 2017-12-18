@@ -1,0 +1,19 @@
+{
+  "files": {
+    "filtra_lista.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Filtra Lista - Unidade 7\n\n\n# Retorna uma lista com os elementos onde a posi\u00e7\u00e3o\n# do elemento na lista original \u00e9 divis\u00edvel por divisor.\n# Recebe como par\u00e2metro o n\u00famero inteiro (divisor) e uma\n# lista n\u00e3o vazia de inteiros n\u00e3o-negativos.\ndef filtra_lista(divisor, numeros):\n    divisiveis = []\n\n    for indice in range(len(numeros)):\n        if indice % divisor == 0:\n            divisiveis.append(numeros[indice])\n\n    return divisiveis\n",
+      "name": "filtra_lista.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nfiltra_lista = getattr(undertest, 'filtra_lista', None)\n\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def test_1(self):\n        lista1 = range(10)\n        assert filtra_lista(2, lista1) == [0,2,4,6,8]\n        assert filtra_lista(3, lista1) == [0,3,6,9]\n        assert lista1 == range(10)\n\n    def test_2(self):\n        lista2 = [2,3,5,7,11,13,17]\n        assert filtra_lista(4, lista2) == [2,11]\n        assert filtra_lista(40, lista2) == [2]\n        assert lista2 == [2,3,5,7,11,13,17]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "02caf368022ce1d2781f1f78a7c03619",
+  "iid": 5904028818997248,
+  "activity_revision": "6.0.0"
+}
