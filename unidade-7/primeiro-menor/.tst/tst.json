@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nprimeiro_menor = getattr(undertest, 'primeiro_menor', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n      assert primeiro_menor(4, [7, 5, 3, 9, 11, 8]) == 2\n\n   def test_exemplo_2(self):\n      assert primeiro_menor(3, [7, 5, 3, 9, 11, 8]) == -1\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "primeiro_menor.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Primeiro Menor - Unidade 7\n\n\n# Atrav\u00e9s do separador, \"explode\" os elementos\n# e cria uma lista com os elementos.\ndef explode(cadeia, separador=\" \"):\n    lista = []\n    palavra = \"\"\n\n    for caracter in cadeia:\n        if caracter != separador:\n            palavra += caracter\n        else:\n            lista.append(palavra)\n            palavra = \"\"\n\n    lista.append(palavra)\n\n    return lista\n\n\n# Retorna o \u00edndice do primeiro elemento menor\n# que o par\u00e2metro menor. Recebe um inteiro e uma lista de digitos (string)\ndef primeiro_menor(menor, numeros):\n    for indice in range(len(numeros)):\n        if int(numeros[indice]) < menor:\n            return indice\n\n    return -1\n\n\ndef main():\n    # Recebe a string de n\u00fameros e o valor menor a ser localizado na lista\n    numeros = raw_input()\n    menor = int(raw_input())\n\n    numeros = explode(numeros)\n\n    # Busca o \u00edndice do primeiro menor.\n    indice = primeiro_menor(menor, numeros)\n\n    # Retorna o valor do primeiro menor.\n    if indice != -1:\n        print \"primeiro menor que %i: %s\" % (menor, numeros[indice])\n    else:\n        print \"sem menores que %i\" % menor\n\n\nif __name__ == '__main__':\n    main()\n",
+      "name": "primeiro_menor.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "67985b327465981f4cdd1587c2add1c8",
+  "iid": 5876453249908736,
+  "activity_revision": "1.0.0"
+}
