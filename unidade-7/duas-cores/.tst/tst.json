@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsepara_duas_cores = getattr(undertest, 'separa_duas_cores', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['a', 'a', 'b', 'a', 'b']\n        assert separa_duas_cores(l1, 'b', 'a') == None\n        assert l1 == [ 'b', 'b', 'a', 'a', 'a']\n     \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "duas_cores.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Duas Cores - Unidade 7\n\n\n# Altera o lista inicial, trazendo todos os elementos\n# da cor1 para o in\u00edcio da lista e deixando todos os\n# elementos da cor2 no final da lista.\ndef separa_duas_cores(lista, cor1, cor2):\n    tamanho = len(lista)\n    i = 0\n    posicao = 0\n\n    while i < tamanho:\n        for j in range(i, tamanho):\n            if lista[j] == cor1:\n                auxiliar = lista[posicao]\n                lista[posicao] = lista[j]\n                lista[j] = auxiliar\n                i = j + 1\n                posicao += 1\n            else:\n                i += 1\n\n",
+      "name": "duas_cores.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a441c878710f5055ac32bffbed4c83e7",
+  "iid": 5045517000114176,
+  "activity_revision": "1.0.2"
+}
