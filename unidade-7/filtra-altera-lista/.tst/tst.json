@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nfiltra_altera_lista = getattr(undertest, 'filtra_altera_lista', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       seq = [0,1,2,3,4,5,6]\n       filtra_altera_lista(2, seq)\n       assert seq == [0, 2, 4 ,6]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "filtra_altera_lista.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Filtra Lista - Unidade 7\n\n\n# Altera a lista removendo os elementos cujos \u00edndices\n# n\u00e3o s\u00e3o divis\u00edveis por \"numero\".\ndef filtra_altera_lista(numero, lista):\n    lista_auxiliar = []\n\n    for elemento in lista:\n        lista_auxiliar.append(elemento)\n\n    removidos = 0\n    for indice in range(len(lista_auxiliar)):\n        if indice % numero != 0:\n            lista.pop(indice - removidos)\n            removidos += 1",
+      "name": "filtra_altera_lista.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e3ecf2a2d8c954a8c9513dbc26090544",
+  "iid": 6437786483687424,
+  "activity_revision": "1.0.9"
+}
