@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nflip = getattr(undertest, 'flip', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = [1, 2, 3, 4, 5, 6, 7]\n        assert flip(l1, 2, 5) == None\n        assert l1 == [1, 2, 6, 5, 4, 3, 7]\n     \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "flip.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Flip - Unidade 7\n\n\n# Reverte os elementos de uma lista que\n# est\u00e3o entre as posi\u00e7\u00f5es i e j, inclusive.\ndef flip(lista, i, j):\n    while i <= j:\n        lista[i], lista[j] = lista[j], lista[i]\n        i += 1\n        j -= 1\n",
+      "name": "flip.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5b5237c447d38f5d5d5591c2113341c2",
+  "iid": 5829868692439040,
+  "activity_revision": "1.0.0"
+}
