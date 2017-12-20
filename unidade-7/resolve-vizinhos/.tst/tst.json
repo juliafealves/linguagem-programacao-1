@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nresolve_vizinhos = getattr(undertest, 'resolve_vizinhos', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n        seq = [6,2,4,4,9,1,0]\n        resolve_vizinhos(seq)\n        assert seq == [6,2,5,4,9,1,0]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "resolve_vizinhos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Resolve Vizinhos - Unidade 7\n\n\n# Altera a lista quando encontra valores consecutivos\n# iguais e alterando o valor mais \u00e0 esquerda, incrementando-o\n# at\u00e9 que seja diferente dos seus dois vizinhos.\ndef resolve_vizinhos(lista):\n    atual = lista[0]\n    anterior = ''\n\n    for indice in range(1, len(lista)):\n        proximo = lista[indice]\n\n        while atual == proximo or atual == anterior:\n            atual += 1\n            lista[indice - 1] = atual\n\n        atual = lista[indice]\n        anterior = lista[indice - 1]\n",
+      "name": "resolve_vizinhos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2fdcaeb8a0e81fd51bb6b3347bcd7046",
+  "iid": 5825775051735040,
+  "activity_revision": "1.0.0"
+}
