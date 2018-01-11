@@ -1,0 +1,19 @@
+{
+  "files": {
+    "soma-intervalo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Soma Intervalo - Unidade 6\n\n\n# Retorna a soma dos inteiros entre um n\u00famero a e\n# um n\u00famero b, inclusive estes n\u00fameros.\ndef soma_intervalo(a, b):\n    resultado = a\n\n    for numero in range(a + 1, b + 1):\n        resultado += numero\n\n    return resultado\n",
+      "name": "soma-intervalo.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsoma_intervalo = getattr(undertest, 'soma_intervalo', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico_1(self):\n       assert soma_intervalo(10,10) == 10\n\n   def test_basico_2(self):\n       assert soma_intervalo(5,15) == 110\n\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "89b4f45681227b209731f3ac244ce82d",
+  "iid": 4573546734944256,
+  "activity_revision": "1.0.1"
+}
