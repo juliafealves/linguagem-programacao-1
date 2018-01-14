@@ -1,0 +1,18 @@
+{
+  "files": {
+    "meta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Meta - Unidade 4\n\n# Guarda as vendas dos funcion\u00e1rios.\nvendas_funcionarios = [0, 0, 0, 0, 0, 0]\n\n# Recebe a meta de venda da loja.\nmeta_venda = float(raw_input())\n\n# Calcula a meta individual dos funcion\u00e1rios.\nmeta_individual = meta_venda / 6\n\ntotal_venda = 0\nmeta_atingida = True\n\n# Recebe as vendas dos 6 funcion\u00e1rios e verifica se atingiu a meta de venda.\nfor n in range(6):\n    vendas_funcionarios[n] = float(raw_input())\n    total_venda += vendas_funcionarios[n]\n\n    if meta_atingida and meta_individual > vendas_funcionarios[n]:\n        meta_atingida = False\n\n# Imprime o resultado de acordo com a meta atiginda.\nif meta_atingida:\n    print \"Total de vendas: R$ %.2f (meta atingida)\" % total_venda\n    print \"----\\nBonifica\u00e7\u00e3o:\"\n\n    i = 1\n    for venda_funcionario in vendas_funcionarios:\n        bonificacao = venda_funcionario * 0.01\n        print \"Funcion\u00e1rio %i: R$ %.2f\" % (i, bonificacao)\n        i += 1\nelse:\n    print \"Total de vendas: R$ %.2f (meta n\u00e3o foi atingida)\" % total_venda\n    print \"----\"\n",
+      "name": "meta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 147.16,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9c6c0d1d776bc55342107d4e80fb01e3",
+  "iid": 5287864489213952,
+  "activity_revision": "1.1.1"
+}
