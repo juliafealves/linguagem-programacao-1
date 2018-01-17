@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 10,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "samu.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: SAMU - Unidade 4\n\natendimentos = []\ntotal_atendimentos = 0\n\n# Recebe e guarda os atendimentos do SAMU durante os 12 meses.\nfor n in range(12):\n    atendimento = int(raw_input())\n    atendimentos.append(atendimento)\n\n    # Contabiliza os atendimentos realizados.\n    total_atendimentos += atendimento\n\n\n# Calcula a m\u00e9dia de atendimentos realizados.\nmedia = total_atendimentos / 12.0\n\nprint \"M\u00e9dia mensal de atendimentos: %.2f\\n----\" % media\n\n# Verifica e imprime os meses com atendimentos acima da m\u00e9dia.\nfor indice in range(len(atendimentos)):\n    if atendimentos[indice] > media:\n        print \"M\u00eas %i: %i\" % (indice + 1, atendimentos[indice])\n",
+      "name": "samu.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "00891c553033c48c5ca69017ecd0e532",
+  "iid": 6353797660016640,
+  "activity_revision": "1.1.1"
+}
