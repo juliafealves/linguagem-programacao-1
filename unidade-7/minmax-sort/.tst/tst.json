@@ -1,0 +1,18 @@
+{
+  "files": {
+    "minmax-sort.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: MinMax Sort - Unidade 7\n\n\n# Retorna o \u00edndice onde existe o menor n\u00famero.\n# O par\u00e2metro inicial, final delimita a faixa de compara\u00e7\u00e3o da lista.\ndef menor_elemento(lista, inicial, final):\n    menor = lista[inicial]\n    indice = inicial\n\n    for i in range(inicial + 1, final + 1):\n        if menor > lista[i]:\n            menor = lista[i]\n            indice = i\n\n    return indice\n\n\n# Retorna o \u00edndice onde existe o maior n\u00famero.\n# O par\u00e2metro inicial, final delimita a faixa de compara\u00e7\u00e3o da lista.\ndef maior_elemento(lista, inicial, final):\n    maior = lista[inicial]\n    indice = inicial\n\n    for i in range(inicial + 1, final + 1):\n        if maior < lista[i]:\n            maior = lista[i]\n            indice = i\n\n    return indice\n\n\n# Retorna a c\u00f3pia de uma lista.\ndef copia_lista(lista):\n    copia = []\n\n    for elemento in lista:\n        copia.append(elemento)\n\n    return copia\n\n\n# Realiza a troca de dois \u00edndices numa lista.\ndef troca_elementos(lista, indice_1, indice_2):\n    lista[indice_1], lista[indice_2] = lista[indice_2], lista[indice_1]\n\n\n# Retorna uma lista de elementos organizados atrav\u00e9s do algoritmo MinMax Sort.\ndef minmax_sort(lista):\n    listas = []\n    i = 0\n    j = len(lista) - 1\n\n    while i < j:\n        menor = menor_elemento(lista, i, j)\n        troca_elementos(lista, i, menor)\n        i += 1\n\n        maior = maior_elemento(lista, i, j)\n        troca_elementos(lista, j, maior)\n        j -= 1\n\n        listas.append(copia_lista(lista))\n\n    return listas",
+      "name": "minmax-sort.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nminmax_sort = getattr(undertest, 'minmax_sort', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert  minmax_sort([7, 4, 8, 1, 2, 3]) == [[1, 4, 3, 7, 2, 8], [1, 2, 3, 4, 7, 8], [1, 2, 3, 4, 7, 8]]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "59974024c7586caf579467673233c607",
+  "iid": 4970795373690880,
+  "activity_revision": "1.0.0"
+}
