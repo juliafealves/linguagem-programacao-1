@@ -4,5 +4,7 @@ Escreva a função unico(string) que recebe uma string e retorna uma string form
 
 ## Exemplos de asserts
 
+```
 assert unico("aa***xxxzzb+++") == "a*xzb+"
 assert unico("") == ""
+```
