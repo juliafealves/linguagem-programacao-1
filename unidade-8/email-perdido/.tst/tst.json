@@ -6,13 +6,13 @@
     },
     "email-perdido.py": {
       "category": "answer",
-      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Email Perdido - Unidade 8\n\n\ndef existe_email(mail, emails):\n    for email in emails:\n        if email == mail:\n            return True\n\n    return False\n\n\ndef encontra_email_perdido(emails_enviados, emails_recebidos):\n    for i in range(len(emails_enviados) - 1, -1, -1):\n        existe = existe_email(emails_enviados[i], emails_recebidos)\n\n        if existe:\n            emails_enviados.pop(i)\n\n    return emails_enviados[0]",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Email Perdido - Unidade 8\n\n\n# Verifica se existe um e-mail em uma lista de e-mails.\ndef existe_email(email, emails):\n    for mail in emails:\n        if email == mail:\n            return True\n\n    return False\n\n\n# Retorna o e-mail que foi enviado e n\u00e3o foi recebido.\ndef encontra_email_perdido(emails_enviados, emails_recebidos):\n    for i in range(len(emails_enviados) - 1, -1, -1):\n        existe = existe_email(emails_enviados[i], emails_recebidos)\n\n        if existe:\n            emails_enviados.pop(i)\n\n    return emails_enviados[0]",
       "name": "email-perdido.py"
     }
   },
   "kind": "assignment",
   "name": null,
-  "checksum": "82fc908d84e25652e6141c83111b219e",
+  "checksum": "6fcf6e822d7d34f366cefe96e249a371",
   "iid": 5339412552482816,
   "activity_revision": "1.1.1"
 }
