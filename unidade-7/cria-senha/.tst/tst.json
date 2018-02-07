@@ -1,0 +1,14 @@
+{
+  "files": {
+    "cria-senha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Cria Senha - Unidade 7\n\n\ndef gerar_senha_forte(senha):\n    nova_senha = \"\"\n\n    for letra in senha:\n        letra_minuscula = letra.lower()\n\n        if letra_minuscula == \"o\":\n            nova_senha += \"0\"\n        elif letra_minuscula == \"i\" or letra_minuscula == \"l\":\n            nova_senha += \"1\"\n        elif letra_minuscula == \"e\":\n            nova_senha += \"3\"\n        elif letra_minuscula == \"a\":\n            nova_senha += \"4\"\n        elif letra_minuscula == \"b\":\n            nova_senha += \"6\"\n        elif letra_minuscula == \"t\":\n            nova_senha += \"7\"\n        else:\n            nova_senha += letra\n\n    return nova_senha\n\n\n# Delimita um string com prefixo e sufixo informado.\ndef delimitar_string(string, prefixo=\"((\", sufixo=\"))\"):\n    return prefixo + string + sufixo\n\n\n# O tipo \"fraco\" corresponde a senha \"F\u00e1cil ou Fraca\" e o tipo \"forte\" corresponde a senha \"Dif\u00edcil ou Forte\".\ndef gerar_senha(senha, tipo):\n    if tipo == \"fraco\":\n        return delimitar_string(senha)\n    elif tipo == \"forte\":\n        senha_forte = gerar_senha_forte(senha)\n\n        return delimitar_string(senha_forte)\n\n\nentrada = raw_input()\n\nwhile entrada != \"***\":\n    entradas = entrada.split()\n    print gerar_senha(entradas[0], entradas[1])\n    entrada = raw_input()",
+      "name": "cria-senha.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "eae085063146568f909b0cae5c51600d",
+  "iid": 4620436637745152,
+  "activity_revision": "1.0.0"
+}
