@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsoma_moldura = getattr(undertest, 'soma_moldura', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        M = [[1,  2,  3,  4 ], [5,  6,  7,  8 ], [9,  10, 11, 12], [14, 15, 16, 17]]\n        assert soma_moldura(M, 0) == 106\n\n    def test_exemplo2(self):\n        M = [[1,  2,  3,  4 ], [5,  6,  7,  8 ], [9,  10, 11, 12], [14, 15, 16, 17]]\n        assert soma_moldura(M, 0) == 106\n        assert soma_moldura(M, 1) == 34\n     \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "soma-moldura.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Soma Moldura - Unidade 9\n\n\n# Retorna a soma das extremidades de uma lista.\ndef somar_extremidades(lista, inicio, fim):\n    return lista[inicio] + lista[fim]\n\n\n# Retorna a soma dos n\u00fameros de uma lista.\ndef somar_elementos(numeros, inicio, fim):\n    soma = 0\n\n    for i in range(inicio, fim):\n        soma += numeros[i]\n\n    return soma\n\n\n# Retorna soma dos elementos da moldura de uma matriz quadrada de acordo com o n\u00edvel.\ndef soma_moldura(matriz, nivel):\n    ultima_linha = len(matriz) - nivel\n    soma = 0\n\n    for i in range(nivel, ultima_linha):\n        inicio = nivel\n        final = len(matriz[i]) - nivel\n\n        if i == nivel or i == (ultima_linha - 1):\n            soma += somar_elementos(matriz[i], inicio, final)\n        else:\n            soma += somar_extremidades(matriz[i], inicio, final - 1)\n\n    return soma\n",
+      "name": "soma-moldura.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "486b9f318f6c54cf8b5d94dfb8d3fae9",
+  "iid": 5223922593169408,
+  "activity_revision": "1.0.3"
+}
