@@ -1,0 +1,19 @@
+{
+  "files": {
+    "toppl.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Toppl - Unidade 9\n\n\n# Verifica se o aluno fez a inscri\u00e7\u00e3o.\ndef verificar_inscrito(aluno, inscritos):\n    for inscrito in inscritos:\n        if aluno == inscrito:\n            return True\n\n    return False\n\n\n# Retorna a quantidade de alunos eliminado nos crit\u00e9rios de m\u00e9dia de corte e n\u00e3o inscrito.\ndef filtra_alunos(alunos, inscritos, media_corte):\n    removidos = 0\n\n    for i in range(len(alunos) -1, -1, -1):\n        aluno = alunos[i]\n\n        if not verificar_inscrito(aluno[0], inscritos) or aluno[1] < media_corte:\n            alunos.pop(i)\n            removidos += 1\n\n    return removidos",
+      "name": "toppl.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nfiltra_alunos = getattr(undertest, 'filtra_alunos', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1(self):\n        inscritos = [121, 123, 124]\n        alunos = [ (120,8.0), (121,7.5), (122,5.0), (123,6.0), (124,9.0), (125,4.0) ]\n        assert filtra_alunos(alunos, inscritos, 7.0) == 4\n        assert alunos == [ (121,7.5), (124,9.0) ]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "912a7f19f3ec997fab1bc22321304b61",
+  "iid": 5784685770702848,
+  "activity_revision": "1.0.0"
+}
