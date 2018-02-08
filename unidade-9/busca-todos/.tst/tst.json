@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nbusca_matriz = getattr(undertest, 'busca_matriz', None)\n\nclass PublicTests(unittest.TestCase):\n    def test_exemplo_1(self):\n        matriz = [\n            [2, 3, 5, 3, 1],\n            [3, 2, 1, 5, 6],\n            [1, 2, 3, 2, 1],\n        ]\n        assert busca_matriz(matriz, 4) == []\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "busca-todos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Busca Todos - Unidade 9\n\n\n# Retorna as posi\u00e7\u00f5es que um elemento se encontra numa lista.\ndef obter_posicoes_elemento(lista, elemento):\n    posicoes = []\n\n    for indice in range(len(lista)):\n        if lista[indice] == elemento:\n            posicoes.append(indice)\n\n    return posicoes\n\n\n# Retorna as posi\u00e7\u00f5es que o elemento se encontra na matriz.\ndef busca_matriz(matriz, elemento):\n    posicoes = []\n\n    for i in range(len(matriz)):\n        indices = obter_posicoes_elemento(matriz[i], elemento)\n\n        if len(indices) > 0:\n            for indice in indices:\n                localizacao = (i, indice)\n                posicoes.append(localizacao)\n\n    return posicoes\n",
+      "name": "busca-todos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1842d957ab03375328d595f26715a6dc",
+  "iid": 4986663667236864,
+  "activity_revision": "1.0.0"
+}
