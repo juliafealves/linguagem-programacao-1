@@ -1,0 +1,19 @@
+{
+  "files": {
+    "substring.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Substring - Unidade 8\n\n\n# Retorna o \u00edndice da letra na string, caso exista na string.\ndef existe_letra(letra, string, inicio):\n    for i in range(inicio, len(string)):\n        if string[i] == letra:\n            return i\n\n    return -1\n\n\n# Verifica se a string2 \u00e9 substring da string1.\ndef is_substring(string1, string2):\n    substring = ''\n    i = 0\n\n    for letra in string2:\n        indice = existe_letra(letra, string1, i)\n\n        if indice != -1:\n            i = indice + 1\n            substring += letra\n\n            if substring == string2:\n                return True\n        else:\n            return False",
+      "name": "substring.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nis_substring = getattr(undertest, 'is_substring', None)\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def test_1(self):\n        assert is_substring('boiada','oi')\n        assert not is_substring('casorio', 'casa')\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "561e50fa8889537e2bd032b4cc94b80f",
+  "iid": 6447606456647680,
+  "activity_revision": "1.0.0"
+}
