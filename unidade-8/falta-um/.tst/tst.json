@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nencontra_rotulo_perdido = getattr(undertest, 'encontra_rotulo_perdido', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['skol', 'brahma', 'itaipava']\n        l2 = ['itaipava', 'brahma']\n        assert encontra_rotulo_perdido(l1,l2) == 'skol'\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "falta-um.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Falta Um - Unidade 8\n\n\n# Verifica se um elemento existe em uma lista.\ndef existe_elemento(elemento, lista):\n    for item in lista:\n        if elemento == item:\n            return True\n\n    return False\n\n\n# Encontra o r\u00f3tulo perdido durante o envio.\ndef encontra_rotulo_perdido(rotulos_enviados, rotulos_recebidos):\n    for rotulo in rotulos_enviados:\n        if not existe_elemento(rotulo, rotulos_recebidos):\n            return rotulo\n",
+      "name": "falta-um.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7234d3122da9c375180f0248544fce8b",
+  "iid": 5786315710791680,
+  "activity_revision": "1.0.0"
+}
