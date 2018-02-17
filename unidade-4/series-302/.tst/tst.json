@@ -1,0 +1,18 @@
+{
+  "files": {
+    "series-302.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: S\u00e9ries (302) - Unidade 4\n\nfor numero in range(302, -11, -3):\n    print numero\n",
+      "name": "series-302.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 3,\n      \"vhalstead\": 0.0,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "787d1745ad8565c33bb1aeab1b8e42da",
+  "iid": 4971498238377984,
+  "activity_revision": "1.1.1"
+}
