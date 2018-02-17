@@ -1,0 +1,18 @@
+{
+  "files": {
+    "classifica-letra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Classifica Letra - Unidade 4\n\n# Recebe a palavra como entrada.\npalavra = raw_input()\n\nfor letra in palavra:\n    letra_minuscula = letra.lower()\n\n    # Verifica se a letra em min\u00fasculo \u00e9 vogal.\n    if letra_minuscula == 'a' or letra_minuscula == 'e' or letra_minuscula == \"i\"\\\n            or letra_minuscula == \"o\" or letra_minuscula == \"u\":\n        print \"<%s> sim\" % letra\n    else:\n        print \"<%s> nao\" % letra\n",
+      "name": "classifica-letra.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 25.27,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ff8282432d5b92602d22702b9b843d48",
+  "iid": 5899903737790464,
+  "activity_revision": "1.0.2"
+}
