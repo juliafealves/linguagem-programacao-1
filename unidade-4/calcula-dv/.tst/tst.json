@@ -1,0 +1,18 @@
+{
+  "files": {
+    "calcula-dv.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Calcula DV - Unidade 4\n\nnumero_banco = raw_input()\n\nposicao_par = 0\nposicao_impar = 0\n\nfor indice in range(len(numero_banco)):\n    numero = int(numero_banco[indice])\n\n    if indice % 2 == 0:\n        posicao_par += numero\n    else:\n        posicao_impar += numero\n\ndigito_verificador = (posicao_par * posicao_impar) % 11\n\nif digito_verificador == 10:\n    numero_banco += \"-X\"\nelse:\n    numero_banco += \"-\" + str(digito_verificador)\n\nprint numero_banco",
+      "name": "calcula-dv.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 11,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "84b8602d5ffebe0f3c81fe6dd8c5420b",
+  "iid": 5780400567746560,
+  "activity_revision": "1.1.2"
+}
