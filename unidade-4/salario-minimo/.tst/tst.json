@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 20,\n      \"vhalstead\": 250.77,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "salario-minimo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Sal\u00e1rio M\u00ednimo (US$ 100) - Unidade 4\n\nano_inicial = int(raw_input())\nano_final = int(raw_input())\n\nanos = ano_final - ano_inicial + 1\n\nanos_acima = 0\nsalarios_acima = 0\n\nanos_abaixo = 0\nsalarios_abaixo = 0\n\nfor ano in range(anos):\n    salario = float(raw_input())\n\n    if salario > 100:\n        anos_acima += 1\n        salarios_acima += salario\n    else:\n        anos_abaixo += 1\n        salarios_abaixo += salario\n\npercentual_abaixo = (100.0 * anos_abaixo) / anos\nprint \"%i ano(s) abaixo (%.0f%% dos anos)\" % (anos_abaixo, percentual_abaixo)\n\nif anos_abaixo > 0:\n    media_abaixo = salarios_abaixo / anos_abaixo\n    print \"m\u00e9dia dos anos abaixo: U$ %.2f\" % media_abaixo\n\npercentual_acima = (100.0 * anos_acima) / anos\nprint \"%i ano(s) acima (%.0f%% dos anos)\" % (anos_acima, percentual_acima)\n\nif anos_acima > 0:\n    media_acima = salarios_acima / anos_acima\n    print \"m\u00e9dia dos anos acima: U$ %.2f\" % media_acima\n\n\n\n",
+      "name": "salario-minimo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5ca7c7f0cbae302d9a042148462e60e9",
+  "iid": 4991798837510144,
+  "activity_revision": "1.1.2"
+}
