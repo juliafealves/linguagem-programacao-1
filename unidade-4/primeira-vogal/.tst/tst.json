@@ -1,0 +1,18 @@
+{
+  "files": {
+    "primeira-vogal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Primeira Vogal - Unidade 4\n\npalavra = raw_input()\n\nvogais = [\"a\", \"e\", \"i\", \"o\", \"u\"]\nencontrada = False\n\nfor letra in palavra:\n    letra_minuscula = letra.lower()\n\n    if letra_minuscula in vogais and not encontrada:\n        encontrada = True\n        print letra\n\nif not encontrada:\n    print \"-\"\n",
+      "name": "primeira-vogal.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 4.75,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3363abe1d3c83e57000acc9484ad86f9",
+  "iid": 5863618142797824,
+  "activity_revision": "1.1.3"
+}
