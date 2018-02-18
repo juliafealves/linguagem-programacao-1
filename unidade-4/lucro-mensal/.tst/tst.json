@@ -1,0 +1,18 @@
+{
+  "files": {
+    "lucro-mensal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Lucro Mensal - Unidade 4\n\nmeses = [\"jan\", \"fev\", \"mar\", \"abr\", \"mai\", \"jun\", \"jul\", \"ago\", \"set\", \"out\", \"nov\", \"dez\"]\n\nfor entrada in range(12):\n    dados = raw_input().split(\" \")\n    receita = float(dados[0])\n    despesa = float(dados[1])\n    lucro = receita - despesa\n\n    print \"%s %4.1f\" % (meses[entrada], lucro)\n",
+      "name": "lucro-mensal.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "870e29a3a57dc8504dc1d601da84f92f",
+  "iid": 4954816484737024,
+  "activity_revision": "1.1.1"
+}
