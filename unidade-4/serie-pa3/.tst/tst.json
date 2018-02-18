@@ -1,0 +1,18 @@
+{
+  "files": {
+    "serie-pa3.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: S\u00e9rie (PA-1) - Unidade 4\n\nfor pa in range(4, 3002, 3):\n    print pa\n",
+      "name": "serie-pa3.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 3,\n      \"vhalstead\": 0.0,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d148b0a209f9f4494c16d5cc64d948c9",
+  "iid": 5778591212109824,
+  "activity_revision": "1.0.1"
+}
