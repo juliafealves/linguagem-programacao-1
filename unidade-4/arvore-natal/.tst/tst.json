@@ -1,0 +1,14 @@
+{
+  "files": {
+    "arvore-natal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: \u00c1rvore de Natal - Unidade 4\n\naltura = int(raw_input())\n\nespacos = altura - 1\ntronco = \" \" * espacos + \"o\"\n\nfor camada in range(1, altura * 2, 2):\n    margem = \" \" * espacos\n    folhas = \"o\" * camada\n\n    print margem + folhas\n    espacos -= 1\n\nprint tronco\n",
+      "name": "arvore-natal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5f08f7dad5808f3cfe36753e8c2e84f0",
+  "iid": 5839333860835328,
+  "activity_revision": "1.0.0"
+}
