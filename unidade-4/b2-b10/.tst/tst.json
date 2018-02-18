@@ -1,0 +1,18 @@
+{
+  "files": {
+    "b2-b10.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: B2 para B10 - Unidade 4\n\nbinario = raw_input()\ndecimal = 0\nposicao = 0\n\nfor indice in range(len(binario) - 1, -1, -1):\n    bit = int(binario[posicao])\n    potenciacao = 2 ** indice\n    valor = bit * potenciacao\n    decimal += valor\n    posicao += 1\n\n    print \"%i * %i = %i\" % (bit, potenciacao, valor)\n\nprint \"%s(2) = %i(10)\" % (binario, decimal)",
+      "name": "b2-b10.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 89.21,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0361e7ae9e7762f54f10225de852e5ef",
+  "iid": 5799774091476992,
+  "activity_revision": "1.0.4"
+}
