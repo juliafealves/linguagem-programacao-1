@@ -1,0 +1,14 @@
+{
+  "files": {
+    "pares-multiplos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Pares de M\u00faltiplos - Unidade 4\n\nnumeros = raw_input().split()\nfator = float(raw_input())\nquantidade_pares = 0\n\npares = []\nfor i in range(len(numeros) - 1):\n    numero = float(numeros[i])\n    vizinho = float(numeros[i + 1])\n\n    if vizinho / numero == fator or numero / vizinho == fator:\n        quantidade_pares += 1\n        pares.append(numero)\n        pares.append(vizinho)\n\nprint \"%i par(es)\" % quantidade_pares\n\nfor i in range(0, len(pares), 2):\n    print \"%.0f %.0f\" % (pares[i], pares[i + 1])\n",
+      "name": "pares-multiplos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "426d1707a9655a01c5a3b0a2c033ab00",
+  "iid": 6354451401015296,
+  "activity_revision": "1.0.1"
+}
