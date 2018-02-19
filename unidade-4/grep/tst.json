@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "ola\n3\num exemplo de frase\noutro ola frase\nfrase\n",
+      "name": "publico",
+      "output": "outro ola frase\n",
+      "type": "io"
+    },
+    {
+      "category": "public",
+      "input": "oia\n2\nnao tem\naaaoiaaaa\n",
+      "name": "outro",
+      "output": "aaaoiaaaa\n",
+      "type": "io"
+    }
+  ]
+}
