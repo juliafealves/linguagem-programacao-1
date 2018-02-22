@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncoluna = getattr(undertest, 'coluna', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1(self):\n        M = [[1,1,1,1],[2,2,2,2],[3,3,3,3]]\n        assert coluna(M,0) == [1,2,3]\n        assert coluna(M,1) == [1,2,3]\n        assert coluna(M,2) == [1,2,3]\n        assert coluna(M,3) == [1,2,3]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "coluna.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Laborat\u00f3rio de Programa\u00e7\u00e3o 1 - 2017.2 UFCG\n# Aluna: J\u00falia Fernandes Alves (117211383)\n# Atividade: Coluna - Unidade 9\n\n\n# Retorna uma nova lista de acordo com os elementos do\n# array localizado na coluna informado.\ndef coluna(matriz, coluna):\n    lista = []\n\n    for i in range(len(matriz)):\n        lista.append(matriz[i][coluna])\n\n    return lista\n",
+      "name": "coluna.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7e61fe348ed39b9ce48319d8a84db067",
+  "iid": 6114143585173504,
+  "activity_revision": "1.0.0"
+}
